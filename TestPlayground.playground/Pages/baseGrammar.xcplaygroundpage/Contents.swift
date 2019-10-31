@@ -32,6 +32,22 @@ str[str.startIndex]
 str[str.index(before: str.endIndex)]
 
 
+// 动态初始化
+var arr1 = Array<String>()
+var arr2:Array<String> = []
+var arr3 = [String]()
+var arr4:[String] = []
+
+// 初始化空的字典
+var dict1:Dictionary<String, String> = [:]
+var dict2:[String:String] = [:]
+var dict3 = [String:String]()
+var dict4 = Dictionary<String, String>()
+
+// 上面Array、Dictionary动态初始化有四种，这里面只有两种
+var set1 = Set<String>()
+var set2:Set<String> = []
+
 
 var arr  = ["a" , "b" , "c"]
 arr[1] = String(99)
@@ -41,8 +57,8 @@ let dic = ["a" : 65, "b" : 66]
 var emptyArray = [String]()
 var arrr = Array<Int>()
 //var arrr1 = Array(arrayLiteral: <#T##_...##_#>)
-var arr3 : Array = [1,2]
-var arr4 :Array<Int> = [1,2]
+var arr32 : Array = [1,2]
+var arr43 :Array<Int> = [1,2]
 
 var emptyIntArr = [Int]()
 //emptyArray[0] = "3"
