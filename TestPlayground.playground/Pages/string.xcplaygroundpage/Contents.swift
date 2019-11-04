@@ -30,20 +30,24 @@ print(str)
  */
 
 class Solution {
+    //解法 1,暴力解法
     func lengthOfLongestSubstring(_ s: String) -> Int {
-        
-        for i in 0 ..< s.lengthOfBytes(using: .utf8){
-            
-            for j in 0 ..< s.lengthOfBytes(using: .utf8){
+        var max = 0
+        for i in 0 ..< s.count{
+            for j in (i) ..< s.count{
                 let startIndex = s.index(s.startIndex, offsetBy: i)
                 let endIndex = s.index(s.startIndex, offsetBy: j)
                 let str = s[startIndex ... endIndex]
-                
-            }
             
+                let ss = String(str)
+                print(ss ,max , i, j)
+
+                if allUnique(ss) {
+                    max =  max > ss.lengthOfBytes(using: .utf8) ? max : ss.lengthOfBytes(using: .utf8)
+                }
+            }
         }
-        
-        return 0
+        return max
     }
     
     func allUnique(_ str : String) -> Bool {
@@ -57,8 +61,30 @@ class Solution {
         }
         return true
     }
+    
+    //解法二, 滑动窗口
+    func lengthOfLongestSubstring1(_ s: String) -> Int {
+
+        var hashDict = [String : Int]()
+        var ans = 0
+        var start = 0
+//        var end = 0
+        for end in 0 ..< s.count {
+            let currentIndex = s.index(s.startIndex, offsetBy: end)
+            let str = s[currentIndex ... currentIndex]
+            let newStr = String(str)
+            
+            if hashDict.keys.contains(newStr) {
+                start = max(start, hashDict[newStr]!)
+            }
+            ans = max(ans, end - start + 1 )
+            hashDict[newStr] = end + 1
+        }
+        return ans
+    }
 }
 
+Solution().lengthOfLongestSubstring1("yrlxqqainrpsictjfyomklhtgnvhcxwaqkxhazrpthjdlcmraadnnmiuaebedzeujedlfudadmdprpgrrlgfypbaveey")
 
 
 
