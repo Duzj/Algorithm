@@ -70,6 +70,9 @@ class Solution {
         var start = 0
 //        var end = 0
         for end in 0 ..< s.count {
+            if s.count - start < ans{
+                return ans
+            }
             let currentIndex = s.index(s.startIndex, offsetBy: end)
             let str = s[currentIndex ... currentIndex]
             let newStr = String(str)
@@ -82,9 +85,63 @@ class Solution {
         }
         return ans
     }
+    
+        //解法二,优化,先把字符串转换成字符数组 滑动窗口
+        func lengthOfLongestSubstring2(_ s: String) -> Int {
+
+            var hashDict = [Character : Int]()
+            var ans = 0
+            var start = 0
+            let characters = Array(s)
+            for end in 0 ..< characters.count {
+                if s.count - start < ans{
+                    return ans
+                }
+
+                let newStr = characters[end]
+                
+                if hashDict.keys.contains(newStr) {
+                    start = max(start, hashDict[newStr]!)
+                }
+                ans = max(ans, end - start + 1 )
+                hashDict[newStr] = end + 1
+            }
+            return ans
+        }
 }
 
-Solution().lengthOfLongestSubstring1("yrlxqqainrpsictjfyomklhtgnvhcxwaqkxhazrpthjdlcmraadnnmiuaebedzeujedlfudadmdprpgrrlgfypbaveey")
+Solution().lengthOfLongestSubstring2("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCD")
+
+
+
+
+str = "5.  最长回文子串"
+str = " 中心扩散法, 马拉车, 动态规划"
+
+/*
+ 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
+
+ 示例 1：
+
+ 输入: "babad"
+ 输出: "bab"
+ 注意: "aba" 也是一个有效答案。
+ 示例 2：
+
+ 输入: "cbbd"
+ 输出: "bb"
+
+ 来源：力扣（LeetCode）
+ 链接：https://leetcode-cn.com/problems/longest-palindromic-substring
+ 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+ */
+
+class Solution1{
+    func longestPalindrome(_ s : String) -> String {
+        
+        return ""
+    }
+}
 
 
 
@@ -102,7 +159,7 @@ Solution().lengthOfLongestSubstring1("yrlxqqainrpsictjfyomklhtgnvhcxwaqkxhazrpth
  链接：https://leetcode-cn.com/problems/find-common-characters
  著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-class Solusion1{
+class Solusion100{
     func commonChars(_ A : [String]) -> [String] {
         if A.isEmpty{
             return [String]()
@@ -129,6 +186,7 @@ class Solusion1{
     }
     
 }
+
 
 
 

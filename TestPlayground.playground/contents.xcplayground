@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios'>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='baseGrammar'/>
         <page name='mathematics'/>
         <page name='sums'/>
         <page name='string'/>
         <page name='linkedList'/>
+        <page name='sort'/>
+        <page name='search'/>
     </pages>
 </playground>
