@@ -11,56 +11,94 @@ import Foundation
 print("Hello, World!")
 
 class Solution {
-
-    func sort(_ arr : inout [Int]) {
-        let length = arr.count
-        mergeSort(&arr, 0, length-1)
-    }
     
-    func mergeSort(_ arr : inout [Int] , _ start : Int , _ end : Int) {
+    func quickSort(_ arr : inout [Int] , _ start : Int , _ end : Int) {
+        // 递归结束条件：startIndex大等于endIndex的时候
         if start < end {
-            let middle = start + (end - start)/2
-            mergeSort(&arr, start, middle)
-            mergeSort(&arr, middle + 1, end)
-            //合并数组
-            merge(&arr, start, middle, end)
+            // 得到基准元素位置
+            let pivotIndex = partition1(&arr, start, end)
+            
+            // 用分治法递归数列的两部分
+            quickSort(&arr, start, pivotIndex)
+            quickSort(&arr, pivotIndex + 1, end)
         }
     }
     
-    func merge(_ arr : inout [Int] , _ start : Int , _ middle : Int , _ end : Int)  {
-        var tempArray = [Int]()
-        
-        var p1 = start
-        var p2 = middle + 1
-        
-        while p1 <= middle && p2 <= end {
-            if arr[p1] < arr[p2] {
-                tempArray.append(arr[p1])
-                p1 += 1
-            }else{
-                tempArray.append(arr[p2])
-                p2 += 1
+    
+    //挖坑法
+    func partition(_ arr : inout [Int] , _ start : Int , _ end : Int ) -> Int {
+
+        var left = start
+        var right = end
+        // 坑的位置，初始等于pivot的位置
+        var pivotIndex = start
+        // 取第一个位置的元素作为基准元素
+        let pivot = arr[pivotIndex]
+
+        while left <= right {
+            
+            //从 right 指针开始向左比较移动
+            while left <= right {
+                if arr[right] < pivot {
+                    arr[left] = arr[right]
+                    pivotIndex = right
+                    left += 1
+                    break
+                }else{
+                    right -= 1
+                }
+            }
+            //left指针从左向右进行比较
+            while left <= right {
+                if arr[left] > pivot {
+                    arr[right] = arr[left]
+                    pivotIndex = left
+                    right -= 1
+                    break
+                }
+                left += 1
             }
         }
-        
-        //说明left数组还有剩余,直接加入到 tmp
-        while p1 <= middle {
-            tempArray.append(arr[p1])
-            p1 += 1
-        }
-        
-        //说明right数组还有剩余,直接加入到 tmp
-        while p2 <= end {
-            tempArray.append(arr[p2])
-            p2 += 1
-        }
-        
-        for i in (0 ..< tempArray.count) {
-            arr[start + i] = tempArray[i]
-        }
+        arr[pivotIndex] = pivot
+        return pivotIndex
     }
+
+    //指针交换法
+    func partition1(_ arr : inout [Int] ,_ start : Int , _ end : Int ) -> Int {
+        //记录原始基点的位置,默认拿第一个作为基点
+        let pivotIndex = start
+        var left = start
+        var right = end
+        
+        //结束循环条件,最后交换完后 left == right
+        while left != right {
+            
+            //先从 right 指针向左移动
+            while left < right &&  arr[right] >= arr[pivotIndex] {
+                right -= 1
+            }
+            
+            while left < right && arr[left] <= arr[pivotIndex] {
+                left += 1
+            }
+            
+            //交换left和right指向的元素
+            if left < right {
+                let tmp = arr[left]
+                arr[left] = arr[right]
+                arr[right] = tmp
+            }
+            
+        }
+        //pivot和指针重合点交换
+        let tmp = arr[left]
+        arr[left] = arr[pivotIndex]
+        arr[pivotIndex] = tmp
+        return left
+    }
+    
 }
 
 var arr = [2,7,1,4,6,8,12,11,12,90,22,34,23]
-Solution().sort(&arr)
+Solution().quickSort(&arr , 0 , arr.count - 1)
 print(arr)

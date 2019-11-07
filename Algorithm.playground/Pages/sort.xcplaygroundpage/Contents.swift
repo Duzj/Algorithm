@@ -172,6 +172,7 @@ Solution2().sort([2,7,1,4,6,8,12,11,12,90,22,34,23])
 
 str = "4.希尔排序"
 /*
+ https://mp.weixin.qq.com/s/b9-dkpAhWJYshuSs5cwnOw
  分组插入排序
  希尔排序这个名字，来源于它的发明者希尔，也称作“缩小增量排序”，是插入排序的一种更高效的改进版本。
  我们知道，插入排序对于大规模的乱序数组的时候效率是比较慢的，因为它每次只能将数据移动一位，希尔排序为了加快插入的速度，让数据移动的时候可以实现跳跃移动，节省了一部分的时间开支。
@@ -243,7 +244,8 @@ class Solution3 {
 
 str = "5.归并排序"
 /*
- https://mp.weixin.qq.com/s?__biz=MzIxMjE5MTE1Nw==&mid=2653200029&idx=1&sn=51ecebafb9ff77baf3de71bdc4f67b78&chksm=8c99ec47bbee6551b0377b97e26670c4895d0c934051e4aa927e62bf9b64996b6e1f7459edfe&mpshare=1&scene=1&srcid=1031x5AKcxNGo7fTyIuAKJAP&sharer_sharetime=1572532174367&sharer_shareid=7404a055fdaf790908d4a0841a38713d%23rd
+
+ https://mp.weixin.qq.com/s/885uGVhlffWAxjgIEW-TiA
 
  归并字面上的意思是合并，归并算法的核心思想是分治法，就是将一个数组一刀切两半，递归切，直到切成单个元素，然后重新组装合并，单个元素合并成小数组，两个小数组合并成大数组，直到最终合并完成，排序完毕。
  
@@ -306,4 +308,137 @@ class Solution4 {
         }
     }
 }
+
+
+
+
+str = "6.快速排序"
+
+/*
+ https://mp.weixin.qq.com/s/PQLC7qFjb74kt6PdExP8mw
+ 同冒泡排序一样，快速排序也属于交换排序，通过元素之间的比较和交换位置来达到排序的目的。
+ 不同的是，冒泡排序在每一轮只把一个元素冒泡到数列的一端，而快速排序在每一轮挑选一个基准元素，并让其他比它大的元素移动到数列一边，比它小的元素移动到数列的另一边，从而把数列拆解成了两个部分。
+ 这种思路就叫做分治法。
+平均情况下需要logn轮，因此快速排序算法的平均时间复杂度是 O（nlogn）。 ,最差是O（n2)
+ 
+ 选定了基准元素以后，我们要做的就是把其他元素当中小于基准元素的都移动到基准元素一边，大于基准元素的都移动到基准元素另一边。
+ 具体如何实现呢？有两种方法：
+ 1.挖坑法
+ 2.指针交换法
+ 
+ 代码中，quickSort方法通过递归的方式，实现了分而治之的思想。
+ partition方法则实现元素的移动，让数列中的元素依据自身大小，分别移动到基准元素的左右两边。
+ */
+
+class Solution5 {
+    
+    func quickSort(_ arr : inout [Int] , _ start : Int , _ end : Int) {
+        // 递归结束条件：startIndex大等于endIndex的时候
+        if start < end {
+            // 得到基准元素位置
+            let pivotIndex = partition(&arr, start, end)
+            
+            // 用分治法递归数列的两部分
+            quickSort(&arr, start, pivotIndex)
+            quickSort(&arr, pivotIndex + 1, end)
+        }
+    }
+    
+    
+    //挖坑法
+    /*
+     在这里，我们使用移动方式是挖坑法。
+     首先，我们选定基准元素Pivot，并记住这个位置index，这个位置相当于一个“坑”。并且设置两个指针left和right，指向数列的最左和最右两个元素：
+     接下来，从right指针开始，把指针所指向的元素和基准元素做比较。如果比pivot大，则right指针向左移动 即 right -- ；如果比pivot小，则把right所指向的元素填入坑中。即 arr[left] = arr[right]
+     同时，left向右移动一位 ,即 left ++ ,结束 right 指针的循环, 开始 left 指针循环
+     left 指针循环
+     接下来，我们切换到left指针进行比较。如果left指向的元素小于pivot，则left指针向右移动 (left ++ )；如果元素大于pivot，则把left指向的元素填入坑中(arr[right] = arr[left])
+     同时，right向左移动一位 (right -- )
+     
+     */
+    func partition(_ arr : inout [Int] , _ start : Int , _ end : Int ) -> Int {
+        var pivotIndex = start
+        var left = start
+        var right = end
+        // 取第一个位置的元素作为基准元素
+        let pivot = arr[pivotIndex]
+
+        while left <= right {
+            
+            //从 right 指针开始向左比较移动
+            while left <= right {
+                if arr[right] < pivot {
+                    arr[left] = arr[right]
+                    pivotIndex = right
+                    left += 1
+                    break
+                }else{
+                    right -= 1
+                }
+            }
+            
+            while left <= right {
+                if arr[left] > pivot {
+                    arr[right] = arr[left]
+                    pivotIndex = left
+                    right -= 1
+                    break
+                }
+                left += 1
+            }
+        }
+        arr[pivotIndex] = pivot
+        return pivotIndex
+    }
+    
+    
+    
+    //指针交换法
+    /*
+     开局和挖坑法相似，我们首先选定基准元素Pivot，并且设置两个指针left和right，指向数列的最左和最右两个元素：
+     接下来是第一次循环，从right指针开始，把指针所指向的元素和基准元素做比较。如果大于等于pivot，则指针向左移动；如果小于pivot，则right指针停止移动，切换到left指针。
+     轮到left指针行动，把指针所指向的元素和基准元素做比较。如果小于等于pivot，则指针向右移动；如果大于pivot，则left指针停止移动。
+     这时候，我们让left和right指向的元素进行交换。
+     然后进行第二轮,依次类推
+     到最后, left 和 right 指针重合,此时退出循环
+     然后把基准点指针和重合指针做交换,交换完,基准点左边的都是小于它的,右边都是大于它的,
+     */
+    func partition1(_ arr : inout [Int] ,_ start : Int , _ end : Int ) -> Int {
+        //记录原始基点的位置,默认拿第一个作为基点
+        let pivotIndex = start
+        var left = start
+        var right = end
+        
+        //结束循环条件,最后交换完后 left == right
+        while left != right {
+            
+            //先从 right 指针向左移动
+            while left < right &&  arr[right] >= arr[pivotIndex] {
+                right -= 1
+            }
+            
+            //由于left一开始指向的是基准元素，判断肯定相等 ,下面要用 <=
+            while left < right && arr[left] <= arr[pivotIndex] {
+                left += 1
+            }
+            
+            //交换left和right指向的元素
+            if left < right {
+                let tmp = arr[left]
+                arr[left] = arr[right]
+                arr[right] = tmp
+            }
+            
+        }
+        //pivot和指针重合点交换
+        let tmp = arr[left]
+        arr[left] = arr[pivotIndex]
+        arr[pivotIndex] = tmp
+        return left
+    }
+}
+
+
+
+
 //: [Next](@next)
