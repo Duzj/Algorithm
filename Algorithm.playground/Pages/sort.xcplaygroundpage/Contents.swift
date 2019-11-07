@@ -239,4 +239,71 @@ class Solution3 {
     
 }
 
+
+
+str = "5.归并排序"
+/*
+ https://mp.weixin.qq.com/s?__biz=MzIxMjE5MTE1Nw==&mid=2653200029&idx=1&sn=51ecebafb9ff77baf3de71bdc4f67b78&chksm=8c99ec47bbee6551b0377b97e26670c4895d0c934051e4aa927e62bf9b64996b6e1f7459edfe&mpshare=1&scene=1&srcid=1031x5AKcxNGo7fTyIuAKJAP&sharer_sharetime=1572532174367&sharer_shareid=7404a055fdaf790908d4a0841a38713d%23rd
+
+ 归并字面上的意思是合并，归并算法的核心思想是分治法，就是将一个数组一刀切两半，递归切，直到切成单个元素，然后重新组装合并，单个元素合并成小数组，两个小数组合并成大数组，直到最终合并完成，排序完毕。
+ 
+ 申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列；
+
+ 设定两个指针，最初位置分别为两个已经排序序列的起始位置；
+
+ 比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置；
+
+ 重复步骤 3 直到某一指针达到序列尾；
+
+ 将另一序列剩下的所有元素直接复制到合并序列尾。
+ */
+class Solution4 {
+    func sort(_ arr : inout [Int]) {
+        let length = arr.count
+        mergeSort(&arr, 0, length-1)
+    }
+    
+    func mergeSort(_ arr : inout [Int] , _ start : Int , _ end : Int) {
+        if start < end {
+            let middle = start + (end - start)/2
+            mergeSort(&arr, start, middle)
+            mergeSort(&arr, middle + 1, end)
+            //合并数组
+            merge(&arr, start, middle, end)
+        }
+    }
+    
+    func merge(_ arr : inout [Int] , _ start : Int , _ middle : Int , _ end : Int)  {
+        var tempArray = [Int]()
+        
+        var p1 = start
+        var p2 = middle + 1
+        
+        while p1 <= middle && p2 <= end {
+            if arr[p1] < arr[p2] {
+                tempArray.append(arr[p1])
+                p1 += 1
+            }else{
+                tempArray.append(arr[p2])
+                p2 += 1
+            }
+        }
+        
+        //说明left数组还有剩余,直接加入到 tmp
+        while p1 <= middle {
+            tempArray.append(arr[p1])
+            p1 += 1
+        }
+        
+        //说明right数组还有剩余,直接加入到 tmp
+        while p2 <= end {
+            tempArray.append(arr[p2])
+            p2 += 1
+        }
+        
+        for i in (0 ..< tempArray.count) {
+            arr[start + i] = tempArray[i]
+        }
+    }
+}
 //: [Next](@next)
