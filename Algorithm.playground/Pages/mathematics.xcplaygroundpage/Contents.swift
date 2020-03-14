@@ -6,6 +6,13 @@ var str = "数学问题"
 
 //MARK: - 数学问题
 
+
+//class solution {
+//    func solution(<#parameters#>) -> <#return type#> {
+//        <#function body#>
+//    }
+//}
+
 //小猪喝水
 /// https://mp.weixin.qq.com/s/Kw5BjPsTvNUZaF8PEOsvSA
 /*
@@ -43,7 +50,6 @@ var str = "数学问题"
  时间复杂度：O(1)
  */
 
-
 class solution3 {
     func pigDrink(totleTime : Double , dieTime : Double , bucket : Double) -> Int {
         var base  = totleTime/dieTime
@@ -57,5 +63,260 @@ solution3().pigDrink(totleTime: 60, dieTime: 21, bucket: 1000)
 pow(3, 6)
 
 
+
+
+/*
+ 面试题57 - II. 和为s的连续正数序列
+ 输入一个正整数 target ，输出所有和为 target 的连续正整数序列（至少含有两个数）。
+ 序列内的数字由小到大排列，不同序列按照首个数字从小到大排列。
+
+ 示例 1：
+ 输入：target = 9
+ 输出：[[2,3,4],[4,5]]
+ 示例 2：
+ 输入：target = 15
+ 输出：[[1,2,3,4,5],[4,5,6],[7,8]]
+ 限制：
+ 1 <= target <= 10^5
+ 来源：力扣（LeetCode）
+ 链接：https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof
+ 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+ */
+
+class Solution1 {
+    func findContinuousSequence(_ target: Int) -> [[Int]] {
+//        var l = 1
+//        var r = 2;
+//
+//        var result = [[Int]]();
+//        let mRinght = target/2 + 1;
+//        while (r <= mRinght){
+//            var  sum = 0;
+//            var tempArr = [Int]()
+//            for i in l ... r{
+//                tempArr.append(i)
+//                sum = sum + i;
+//            }
+//
+//            if sum == target{
+//                result.append(tempArr);
+//                r += 1;
+//            }else if sum > target{
+//                l += 1;
+//            }else{
+//                r += 1;
+//            }
+//        }
+//        return result ;
+        
+        
+        var l = 1
+        var r = 2
+        let maxR = target/2 + 1
+        var result = [[Int]]()
+        while (r <= maxR){
+            let sum = (l + r )*(r - l + 1)/2
+
+            if sum == target{
+                var temp = [Int]()
+                for i in l ... r{
+                    temp.append(i)
+                }
+                result.append(temp)
+                r += 1;
+            }else if sum < target{
+                r += 1;
+            }else{
+                l += 1;
+            }
+        }
+        return result;
+    }
+}
+
+Solution1().findContinuousSequence(9);
+print(Solution1().findContinuousSequence(9))
+
+
+
+
+class Solution2{
+    func solution(_ arr : [Int] , _ target : Int) -> [Int] {
+        var dict = [Int : Int]()
+        for (i , num) in arr.enumerated(){
+            
+            if let k = dict[target - num]{
+                return [k + 1 , i + 1];
+            }else{
+                dict[num] = i;
+            }
+        }
+        return [Int]()
+    }
+}
+
+Solution2().solution([1,4,4,5], 8)
+
+
+
+class MaxQueue {
+    var queue = [Int]()
+    var maxQ = [Int]()
+    init() {
+
+    }
+    
+    func max_value() -> Int {
+        if queue.isEmpty {
+            return -1;
+        }else{
+            return maxQ.first!;
+        }
+    }
+    
+    func push_back(_ value: Int) {
+        
+        queue.append(value)
+        
+        while maxQ.last! < value {
+            maxQ.removeLast()
+        }
+        maxQ.append(value)
+    }
+    
+    func pop_front() -> Int {
+        if queue.isEmpty {
+            return -1
+        }else{
+            let v = queue.last!;
+            queue.removeLast();
+            if v == maxQ.first{
+                maxQ.removeFirst();
+            }
+            return v;
+        }
+    }
+}
+
+
+//121.买卖股票的最佳时机
+//给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
+//
+//如果你最多只允许完成一笔交易（即买入和卖出一支股票），设计一个算法来计算你所能获取的最大利润。
+//
+//注意你不能在买入股票前卖出股票。
+//
+//示例 1:
+//
+//输入: [7,1,5,3,6,4]
+//输出: 5
+//解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
+//     注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。
+//示例 2:
+//
+//输入: [7,6,4,3,1]
+//输出: 0
+//解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
+//
+//来源：力扣（LeetCode）
+//链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock
+//著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+class Solution7 {
+    func maxProfit(_ prices: [Int]) -> Int {
+        var i = 0
+        var lowP = Int.max
+        var maxP = 0
+        while i < prices.count {
+            
+            if prices[i] < lowP {
+                lowP = prices[i]
+            }else if (maxP < (prices[i] - lowP)){
+                maxP = prices[i] - lowP
+            }
+            i += 1
+        }
+        return maxP
+    }
+}
+
+print(Solution7().maxProfit([7,1,5,3,6,4]));
+
+
+
+
+
+
+/*
+ 1013. 将数组分成和相等的三个部分
+ 
+ 给你一个整数数组 A，只有可以将其划分为三个和相等的非空部分时才返回 true，否则返回 false。
+ 形式上，如果可以找出索引 i+1 < j 且满足 (A[0] + A[1] + ... + A[i] == A[i+1] + A[i+2] + ... + A[j-1] == A[j] + A[j-1] + ... + A[A.length - 1]) 就可以将数组三等分。
+ 示例 1：
+ 输出：[0,2,1,-6,6,-7,9,1,2,0,1]
+ 输出：true
+ 解释：0 + 2 + 1 = -6 + 6 - 7 + 9 + 1 = 2 + 0 + 1
+ 示例 2：
+ 输入：[0,2,1,-6,6,7,9,-1,2,0,1]
+ 输出：false
+ 示例 3：
+ 输入：[3,3,6,5,-2,2,5,1,-9,4]
+ 输出：true
+ 解释：3 + 3 = 6 = 5 - 2 + 2 + 5 + 1 - 9 + 4
+
+ 提示：
+ 3 <= A.length <= 50000
+ -10^4 <= A[i] <= 10^4
+
+ 来源：力扣（LeetCode）
+ 链接：https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum
+ 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+ */
+
+class Solution12 {
+    func canThreePartsEqualSum(_ A: [Int]) -> Bool {
+        
+        let sum = A.reduce(0, +);
+        var target = 0
+        if sum % 3 == 0 {
+            target = sum/3
+        }else{
+            return false
+        }
+        
+        var i = 0
+        var j = 0
+        var temp = 0
+        
+        while i < A.count {
+            temp = temp + A[i]
+            if temp == target{
+                break
+            }
+            i += 1;
+        }
+        
+        if temp != target {
+            return false
+        }
+        
+        j = i + 1
+        
+        while j < (A.count - 1) {
+            temp = temp + A[j]
+            
+            if temp == target * 2{
+                break
+            }
+            j += 1
+        }
+        
+        if temp != target*2{
+            return false
+        }else{
+            return true
+        }
+    }
+}
 
 //: [Next](@next)

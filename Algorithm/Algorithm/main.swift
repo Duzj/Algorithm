@@ -10,6 +10,223 @@ import Foundation
 
 print("Hello, World!")
 
+class Solution20 {
+    func majorityElement(_ nums: [Int]) -> [Int] {
+        
+        if nums.count < 2{
+            return nums
+        }
+        
+        var cand1 = nums[0]
+        var candCount1 = 0
+        var cand2 = nums[0]
+        var candCount2 = 0
+
+        for num in  nums {
+            if num == cand1 {
+                candCount1 += 1
+                continue
+            }
+            if num == cand2 {
+                candCount2 += 1
+                continue
+            }
+            if candCount1 == 0 {
+                cand1 = num
+                candCount1 += 1
+                continue
+            }
+            if candCount2 == 0 {
+                cand2 = num
+                candCount2 += 1
+                continue
+            }
+            candCount1 -= 1
+            candCount2 -= 1
+        }
+        
+        
+        candCount1 = 0
+        candCount2 = 0
+        
+        for num in nums {
+            if cand1 == num {
+                candCount1 += 1
+                continue
+            }
+            if cand2 == num {
+                candCount2 += 1
+                continue
+            }
+        }
+        
+        var arr = [Int]()
+        if candCount1 > nums.count/3 {
+            arr.append(cand1)
+        }
+        if candCount2 > nums.count/3 {
+            arr.append(cand2)
+        }
+        
+        return arr
+        
+//        let nnar = nums.sorted()
+//        return nnar[nnar.count/2]
+        
+        
+        
+        
+        
+        var dict = [Int : Int]()
+        var tempNum = 0;
+        var maxCount = nums.count / 3
+        var result = [Int]()
+        
+        for i in 0 ..< nums.count {
+            let num = nums[i]
+            if  dict[num] == nil {
+                dict[num] = 1
+            }else{
+                let count =  dict[num]!
+                let newCount = count + 1
+                dict[num] = newCount
+            }
+            if dict[num]! > maxCount{
+//                maxCount = dict[num]!;
+//                tempNum = num
+                if !result.contains(num) {
+                    result.append(num)
+                }
+            }
+        }
+        return result
+    }
+}
+
+Solution20().majorityElement([1,2])
+
+
+//class Solution2 {
+//    func majorityElement(_ nums: [Int]) -> Int {
+//
+//
+////        var count = 0
+////        var temp = 0
+////        if nums.count > 0 {
+////            temp = nums[0]
+////        }
+////
+////        for num in  nums {
+////            if count == 0{
+////                temp = num
+////            }
+////            if temp == num  {
+////                count += 1
+////            }else{
+////                count -= 1
+////            }
+////        }
+////        return temp
+//
+//
+//
+//
+////        let nnar = nums.sorted()
+////        return nnar[nnar.count/2]
+//
+//
+//
+//
+//
+//        var dict = [Int : Int]()
+//        var tempNum = 0;
+//        var maxCount = nums.count / 3
+//        var result = [Int]()
+//
+//        for i in 0 ..< nums.count {
+//            let num = nums[i]
+//            if  dict[num] == nil {
+//                dict[num] = 1
+//            }else{
+//                let count =  dict[num]!
+//                let newCount = count + 1
+//                dict[num] = newCount
+//            }
+//            if dict[num]! > maxCount{
+////                maxCount = dict[num]!;
+////                tempNum = num
+//                if !result.contains(num) {
+//                    result.append(num)
+//                }
+//            }
+//        }
+//        return result
+//    }
+//}
+//
+//print(Solution2().majorityElement([3,2,2]));
+
+
+class Solution1 {
+//    func gcdOfStrings(_ str1: String, _ str2: String) -> String {
+//        var minx = min(str1.count, str2.count)
+//
+//        var subStr = "";
+//        while minx > 0 {
+//
+//            if (str1.count % minx == 0) && (str2.count % minx == 0) {
+////                let index = str1.index(str1.startIndex, offsetBy: minx)
+////                let index1 = str1.index(str1.startIndex, offsetBy: 0)
+//
+//                subStr = String(str1.prefix(minx))
+//                if check(str1, subStr) && check(str2, subStr) {
+//                    return subStr;
+//                }
+//            }
+//            minx -= 1
+//        }
+//        return ""
+//    }
+//
+//
+//    func check(_ s : String , _ subs : String) -> Bool {
+//        let count = s.count/subs.count
+//        var i = 0
+//        var tempStr = ""
+//        while (i < count) {
+//            tempStr += subs
+//            i += 1
+//        }
+//        if s == tempStr {
+//            return true
+//        }else{
+//            return false
+//        }
+//    }
+    
+    func gcdOfStrings(_ str1: String, _ str2: String) -> String {
+        
+        if (str1 + str2) == (str2 + str1) {
+            let maxL = gcd(str2.count , str1.count)
+            return String(str1.prefix(maxL))
+        }else{
+            return ""
+        }
+    }
+
+    func gcd(_ a: Int ,_ b:Int) -> Int{
+        if b == 0 {
+            return a
+        }
+        return gcd(b , a % b)
+//        return b == 0 ? a : gcd(b , a % b)
+    }
+}
+
+
+print(Solution1().gcdOfStrings("ABABAB", "ABAB"))
+
+
 class Solution {
     
     func quickSort(_ arr : inout [Int] , _ start : Int , _ end : Int) {
