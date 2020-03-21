@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8B6A6EC2425BFA400C03EED /* _141_环形链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6A6EB2425BFA400C03EED /* _141_环形链表.swift */; };
+		C8B6A72B2425C24500C03EED /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6A72A2425C24500C03EED /* ListNode.swift */; };
 		C8C6A66B2372B92300B3059D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6A66A2372B92300B3059D /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C8B6A6EB2425BFA400C03EED /* _141_环形链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_141_环形链表.swift"; sourceTree = "<group>"; };
+		C8B6A72A2425C24500C03EED /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		C8B6A72C2425EDFE00C03EED /* Algorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Algorithm.playground; sourceTree = "<group>"; };
 		C8C6A6672372B92300B3059D /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C6A66A2372B92300B3059D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8B6A6E92425BF3B00C03EED /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				C8B6A6EB2425BFA400C03EED /* _141_环形链表.swift */,
+				C8B6A72A2425C24500C03EED /* ListNode.swift */,
+			);
+			path = "链表";
+			sourceTree = "<group>";
+		};
+		C8B6A6EA2425BF3B00C03EED /* 数组 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "数组";
+			sourceTree = "<group>";
+		};
 		C8C6A65E2372B92300B3059D = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +78,10 @@
 		C8C6A6692372B92300B3059D /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				C8B6A72C2425EDFE00C03EED /* Algorithm.playground */,
 				C8C6A66A2372B92300B3059D /* main.swift */,
+				C8B6A6E92425BF3B00C03EED /* 链表 */,
+				C8B6A6EA2425BF3B00C03EED /* 数组 */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -89,7 +113,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = duzj;
 				TargetAttributes = {
 					C8C6A6662372B92300B3059D = {
@@ -120,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B6A6EC2425BFA400C03EED /* _141_环形链表.swift in Sources */,
 				C8C6A66B2372B92300B3059D /* main.swift in Sources */,
+				C8B6A72B2425C24500C03EED /* ListNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +269,7 @@
 		C8C6A66F2372B92300B3059D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -252,6 +279,7 @@
 		C8C6A6702372B92300B3059D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
