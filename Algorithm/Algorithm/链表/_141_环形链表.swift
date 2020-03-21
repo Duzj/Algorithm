@@ -40,6 +40,7 @@ import Foundation
 
 class _141_环形链表 {
     
+    //快慢指针
     func hasCycle(_ head : ListNode) -> Bool {
         if head == nil || head.next == nil {
             return false
@@ -56,9 +57,24 @@ class _141_环形链表 {
                 return true
             }
         }
+        return false
+    }
+    
+    
+    //hash set
+    func hasCycle1(_ head : ListNode) -> Bool {
+        var newHead = head
+        var nodeSet = Set<ListNode>()
+        while newHead != nil  && newHead.next != nil{
+            if nodeSet.contains(newHead) {
+                return true
+            }else{
+                nodeSet.insert(newHead)
+            }
+            newHead = newHead.next!
+        }
         
         return false
-        
     }
 }
 
