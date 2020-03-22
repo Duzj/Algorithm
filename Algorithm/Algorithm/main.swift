@@ -8,6 +8,10 @@
 
 import Foundation
 
+print(_20_有效的括号().isValid1("[()]"))
+
+
+
 print("Hello, World!")
 var node = ListNode(1);
 var node1 = ListNode(2);
