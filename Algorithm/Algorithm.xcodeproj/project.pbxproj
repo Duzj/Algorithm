@@ -23,6 +23,10 @@
 		C8B6A74324277EFB00C03EED /* _224_基本计算器.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6A74224277EFB00C03EED /* _224_基本计算器.swift */; };
 		C8B6A7532427AC4F00C03EED /* _232_用栈实现队列.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6A7522427AC4F00C03EED /* _232_用栈实现队列.swift */; };
 		C8C6A66B2372B92300B3059D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6A66A2372B92300B3059D /* main.swift */; };
+		FBC6AA502428F11D00390B48 /* _88_合并两个有序数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6AA4F2428F11D00390B48 /* _88_合并两个有序数组.swift */; };
+		FBC6AA522428F70200390B48 /* _75_颜色分类.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6AA512428F70200390B48 /* _75_颜色分类.swift */; };
+		FBC6AA542428FBB700390B48 /* _面试题_16_16_部分排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6AA532428FBB700390B48 /* _面试题_16_16_部分排序.swift */; };
+		FBC6AA56242901EA00390B48 /* _164_最大间距.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6AA55242901EA00390B48 /* _164_最大间距.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +60,10 @@
 		C8B6A7522427AC4F00C03EED /* _232_用栈实现队列.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_232_用栈实现队列.swift"; sourceTree = "<group>"; };
 		C8C6A6672372B92300B3059D /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C6A66A2372B92300B3059D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FBC6AA4F2428F11D00390B48 /* _88_合并两个有序数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_88_合并两个有序数组.swift"; sourceTree = "<group>"; };
+		FBC6AA512428F70200390B48 /* _75_颜色分类.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_75_颜色分类.swift"; sourceTree = "<group>"; };
+		FBC6AA532428FBB700390B48 /* _面试题_16_16_部分排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_16_16_部分排序.swift"; sourceTree = "<group>"; };
+		FBC6AA55242901EA00390B48 /* _164_最大间距.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_164_最大间距.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,12 +141,24 @@
 			children = (
 				C8B6A72C2425EDFE00C03EED /* Algorithm.playground */,
 				C8C6A66A2372B92300B3059D /* main.swift */,
+				FBC6AA4E2428F0F900390B48 /* 排序_数组 */,
 				C8B6A7512427AC4F00C03EED /* 队列 */,
 				C8B6A73924277A2A00C03EED /* 栈 */,
 				C8B6A6E92425BF3B00C03EED /* 链表 */,
 				C8B6A6EA2425BF3B00C03EED /* 数组 */,
 			);
 			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		FBC6AA4E2428F0F900390B48 /* 排序_数组 */ = {
+			isa = PBXGroup;
+			children = (
+				FBC6AA4F2428F11D00390B48 /* _88_合并两个有序数组.swift */,
+				FBC6AA512428F70200390B48 /* _75_颜色分类.swift */,
+				FBC6AA532428FBB700390B48 /* _面试题_16_16_部分排序.swift */,
+				FBC6AA55242901EA00390B48 /* _164_最大间距.swift */,
+			);
+			path = "排序_数组";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,17 +219,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC6AA502428F11D00390B48 /* _88_合并两个有序数组.swift in Sources */,
 				C8B6A73F24277E6600C03EED /* _856_括号的分数.swift in Sources */,
 				C8B6A74124277EAC00C03EED /* _150_逆波兰表达式求值.swift in Sources */,
 				C8B6A73D24277E0100C03EED /* _20_有效的括号.swift in Sources */,
+				FBC6AA522428F70200390B48 /* _75_颜色分类.swift in Sources */,
 				C8B6A6EC2425BFA400C03EED /* _141_环形链表.swift in Sources */,
 				C8B6A73B24277A3A00C03EED /* Stack.swift in Sources */,
 				C8B6A74324277EFB00C03EED /* _224_基本计算器.swift in Sources */,
 				C8B6A7322426060900C03EED /* _876_链表的中间结点.swift in Sources */,
 				C86092E424288A5D0058DA6F /* _225_用队列实现栈.swift in Sources */,
 				C8C6A66B2372B92300B3059D /* main.swift in Sources */,
+				FBC6AA56242901EA00390B48 /* _164_最大间距.swift in Sources */,
 				C8B6A73424260AE100C03EED /* _234_回文链表.swift in Sources */,
 				C8B6A7532427AC4F00C03EED /* _232_用栈实现队列.swift in Sources */,
+				FBC6AA542428FBB700390B48 /* _面试题_16_16_部分排序.swift in Sources */,
 				C86092A42428523C0058DA6F /* Queue.swift in Sources */,
 				C8B6A72B2425C24500C03EED /* ListNode.swift in Sources */,
 				C8B6A72E2425F28700C03EED /* _203_移除链表元素.swift in Sources */,
