@@ -27,7 +27,6 @@ import Foundation
 
 struct Stack <T> {
     public init() {}
-
    fileprivate  var arr = [T]()
     
     var count : Int {
@@ -38,9 +37,7 @@ struct Stack <T> {
         self.arr.append(element)
     }
     
-    
     mutating func pop() -> T? {
-//        self.arr.popLast()
         let element = self.arr.popLast()
         return element
     }
@@ -50,11 +47,13 @@ struct Stack <T> {
     }
     
     public func isEmpty() -> Bool {
-        
         // 判断数组是否为空
         return self.arr.isEmpty
     }
 }
+
+
+
 
 extension Stack: CustomStringConvertible, CustomDebugStringConvertible {
     

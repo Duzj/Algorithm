@@ -38,7 +38,31 @@ import Foundation
  */
 
 class _224_基本计算器 {
-//    func calculate(_ s: String) -> Int {
+    func calculate(_ s: String) -> Int {
+        var stack = Stack<Int>()
+        var newStr = s.replacingOccurrences(of: " ", with: "")
+        for str in newStr {
+          
+            if str == ")" {
+                
+            }else{
+                let a = Int(str)!
+                stack.push(a)
+            }
+            
+//            switch char {
+//            case "+":
 //
-//    }
+//            case "-":
+//
+//            case "(":
+//
+//            case ")":
+//
+//            default:
+//
+//            }
+            
+        }
+    }
 }

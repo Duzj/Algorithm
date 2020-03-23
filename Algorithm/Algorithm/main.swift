@@ -8,6 +8,10 @@
 
 import Foundation
 
+print(_150_逆波兰表达式求值().evalRPN(["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"]))
+
+print(_856_括号的分数().scoreOfParentheses("(()(()))"))
+
 print(_20_有效的括号().isValid1("[()]"))
 
 

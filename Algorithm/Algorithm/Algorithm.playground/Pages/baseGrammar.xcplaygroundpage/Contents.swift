@@ -14,6 +14,7 @@ var quotation = """
 an other
 """
 var add = quotation.lengthOfBytes(using: .utf8)
+quotation.count
 
 print(quotation)
 

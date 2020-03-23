@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C86092A42428523C0058DA6F /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86092A32428523C0058DA6F /* Queue.swift */; };
+		C86092E424288A5D0058DA6F /* _225_用队列实现栈.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86092E324288A5D0058DA6F /* _225_用队列实现栈.swift */; };
 		C8B6A6EC2425BFA400C03EED /* _141_环形链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6A6EB2425BFA400C03EED /* _141_环形链表.swift */; };
 		C8B6A72B2425C24500C03EED /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6A72A2425C24500C03EED /* ListNode.swift */; };
 		C8B6A72E2425F28700C03EED /* _203_移除链表元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6A72D2425F28700C03EED /* _203_移除链表元素.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C86092A32428523C0058DA6F /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		C86092E324288A5D0058DA6F /* _225_用队列实现栈.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_225_用队列实现栈.swift"; sourceTree = "<group>"; };
 		C8B6A6EB2425BFA400C03EED /* _141_环形链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_141_环形链表.swift"; sourceTree = "<group>"; };
 		C8B6A72A2425C24500C03EED /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		C8B6A72C2425EDFE00C03EED /* Algorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Algorithm.playground; sourceTree = "<group>"; };
@@ -101,7 +105,9 @@
 		C8B6A7512427AC4F00C03EED /* 队列 */ = {
 			isa = PBXGroup;
 			children = (
+				C86092A32428523C0058DA6F /* Queue.swift */,
 				C8B6A7522427AC4F00C03EED /* _232_用栈实现队列.swift */,
+				C86092E324288A5D0058DA6F /* _225_用队列实现栈.swift */,
 			);
 			path = "队列";
 			sourceTree = "<group>";
@@ -200,9 +206,11 @@
 				C8B6A73B24277A3A00C03EED /* Stack.swift in Sources */,
 				C8B6A74324277EFB00C03EED /* _224_基本计算器.swift in Sources */,
 				C8B6A7322426060900C03EED /* _876_链表的中间结点.swift in Sources */,
+				C86092E424288A5D0058DA6F /* _225_用队列实现栈.swift in Sources */,
 				C8C6A66B2372B92300B3059D /* main.swift in Sources */,
 				C8B6A73424260AE100C03EED /* _234_回文链表.swift in Sources */,
 				C8B6A7532427AC4F00C03EED /* _232_用栈实现队列.swift in Sources */,
+				C86092A42428523C0058DA6F /* Queue.swift in Sources */,
 				C8B6A72B2425C24500C03EED /* ListNode.swift in Sources */,
 				C8B6A72E2425F28700C03EED /* _203_移除链表元素.swift in Sources */,
 				C8B6A7302425FCDE00C03EED /* _83_删除排序链表中的重复元素.swift in Sources */,

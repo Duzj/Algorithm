@@ -40,30 +40,57 @@ import Foundation
 
 
 class _232_用栈实现队列 {
-//    /** Initialize your data structure here. */
-//    init() {
-//
-//    }
-//
-//    /** Push element x to the back of queue. */
-//    func push(_ x: Int) {
-//
-//    }
-//
-//    /** Removes the element from in front of queue and returns that element. */
-//    func pop() -> Int {
-//
-//    }
-//
-//    /** Get the front element. */
-//    func peek() -> Int {
-//
-//    }
-//
-//    /** Returns whether the queue is empty. */
-//    func empty() -> Bool {
-//
-//    }
+    /** Initialize your data structure here. */
+    
+    fileprivate var inStack = Stack<Int>()
+    fileprivate var outStack = Stack<Int>()
+    
+    /*
+     实现思想,2 个栈, 一个入栈 ,一个出栈用
+     
+     1. 入栈时直接加入 inStack
+     2. 出栈时,如果 outStack 不为空,就直接在 outStack 弹出 栈顶元素, 如果 outStack 为空,就先把 inStack 的元素依次弹出到 outStack 中,在从 outStack 中弹出栈顶元素
+     
+     3.
+     
+     */
+    init() {
+
+    }
+
+    /** Push element x to the back of queue. */
+    func push(_ x: Int) {
+        inStack.push(x)
+    }
+
+    /** Removes the element from in front of queue and returns that element. */
+    func pop() -> Int {
+        if outStack.isEmpty() {
+            while !inStack.isEmpty() {
+                outStack.push(inStack.pop()!)
+            }
+        }
+        return outStack.pop() ?? 0
+    }
+
+    /** Get the front element. */
+    func peek() -> Int {
+        if outStack.isEmpty() {
+            while !inStack.isEmpty() {
+                outStack.push(inStack.pop()!)
+            }
+        }
+        return outStack.peek() ?? 0
+    }
+
+    /** Returns whether the queue is empty. */
+    func empty() -> Bool {
+        if inStack.isEmpty() && outStack.isEmpty(){
+            return true
+        }else{
+            return false
+        }
+    }
 }
 
 
@@ -72,22 +99,22 @@ class _232_用栈实现队列 {
 //    init() {
 //
 //    }
-//    
+//
 //    /** Push element x to the back of queue. */
 //    func push(_ x: Int) {
 //
 //    }
-//    
+//
 //    /** Removes the element from in front of queue and returns that element. */
 //    func pop() -> Int {
 //
 //    }
-//    
+//
 //    /** Get the front element. */
 //    func peek() -> Int {
 //
 //    }
-//    
+//
 //    /** Returns whether the queue is empty. */
 //    func empty() -> Bool {
 //

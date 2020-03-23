@@ -49,7 +49,28 @@ import Foundation
  */
 
 class _150_逆波兰表达式求值 {
-//    func evalRPN(_ tokens: [String]) -> Int {
-//
-//    }
+    func evalRPN(_ tokens: [String]) -> Int {
+        var stack = Stack<Int>()
+        
+        for str in tokens {
+            if str == "+" {
+                stack.push(stack.pop()! + stack.pop()!)
+            }else if str == "-" {
+                let a = stack.pop()!
+                let b = stack.pop()!
+                stack.push(b - a)
+            }else if str == "*" {
+                let a = stack.pop()!
+                let b = stack.pop()!
+                stack.push(b * a)
+            }else if str == "/" {
+                let a = stack.pop()!
+                let b = stack.pop()!
+                stack.push(b / a)
+            }else{
+                stack.push(Int(str)!)
+            }
+        }
+        return stack.pop()!
+    }
 }

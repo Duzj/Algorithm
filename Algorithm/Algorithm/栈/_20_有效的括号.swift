@@ -74,7 +74,7 @@ class _20_有效的括号 {
     }
     
     
-    //  1 . 使用栈
+    //  1 .
     func isValid1(_ s: String) -> Bool {
         var news = s
         while news.contains("()") ||  news.contains("[]") || news.contains("{}"){
