@@ -10,7 +10,10 @@ import Foundation
 
 var arr = [2,4,1,99,2,3,4,98,12,32,24,16]
 print(arr)
-print(插入排序().insertingSort1(arr))
+归并排序().sort(&arr)
+print(arr)
+var arr1 = [2,4,1,99,2,3,4,98,12,32,24,16]
+print(插入排序().insertingSort1(arr1))
 
 //print(选择排序().selectionSort(arr))
 

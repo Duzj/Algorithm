@@ -32,6 +32,9 @@
 		C8609345242B1AD20058DA6F /* 堆排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8609344242B1AD20058DA6F /* 堆排序.swift */; };
 		C8609347242B4BC80058DA6F /* 插入排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8609346242B4BC80058DA6F /* 插入排序.swift */; };
 		C8609349242B57BF0058DA6F /* 归并排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8609348242B57BF0058DA6F /* 归并排序.swift */; };
+		C860934B242D93900058DA6F /* 快速排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = C860934A242D93900058DA6F /* 快速排序.swift */; };
+		C860934E242DADF40058DA6F /* _21_合并两个有序链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C860934D242DADF30058DA6F /* _21_合并两个有序链表.swift */; };
+		C8609352242DAE4A0058DA6F /* _23_合并K个排序链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8609351242DAE4A0058DA6F /* _23_合并K个排序链表.swift */; };
 		C8C6A66B2372B92300B3059D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6A66A2372B92300B3059D /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +76,9 @@
 		C8609344242B1AD20058DA6F /* 堆排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "堆排序.swift"; sourceTree = "<group>"; };
 		C8609346242B4BC80058DA6F /* 插入排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "插入排序.swift"; sourceTree = "<group>"; };
 		C8609348242B57BF0058DA6F /* 归并排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "归并排序.swift"; sourceTree = "<group>"; };
+		C860934A242D93900058DA6F /* 快速排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "快速排序.swift"; sourceTree = "<group>"; };
+		C860934D242DADF30058DA6F /* _21_合并两个有序链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_21_合并两个有序链表.swift"; sourceTree = "<group>"; };
+		C8609351242DAE4A0058DA6F /* _23_合并K个排序链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_23_合并K个排序链表.swift"; sourceTree = "<group>"; };
 		C8B6A72C2425EDFE00C03EED /* Algorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Algorithm.playground; sourceTree = "<group>"; };
 		C8C6A6672372B92300B3059D /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C6A66A2372B92300B3059D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -152,8 +158,18 @@
 				C8609344242B1AD20058DA6F /* 堆排序.swift */,
 				C8609346242B4BC80058DA6F /* 插入排序.swift */,
 				C8609348242B57BF0058DA6F /* 归并排序.swift */,
+				C860934A242D93900058DA6F /* 快速排序.swift */,
 			);
 			path = "排序算法(10 大排序算法)";
+			sourceTree = "<group>";
+		};
+		C860934C242DADCD0058DA6F /* 排序_链表 */ = {
+			isa = PBXGroup;
+			children = (
+				C860934D242DADF30058DA6F /* _21_合并两个有序链表.swift */,
+				C8609351242DAE4A0058DA6F /* _23_合并K个排序链表.swift */,
+			);
+			path = "排序_链表";
 			sourceTree = "<group>";
 		};
 		C8C6A65E2372B92300B3059D = {
@@ -175,14 +191,15 @@
 		C8C6A6692372B92300B3059D /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
-				C8B6A72C2425EDFE00C03EED /* Algorithm.playground */,
-				C8C6A66A2372B92300B3059D /* main.swift */,
-				C860933F242AEFAC0058DA6F /* 排序算法(10 大排序算法) */,
 				C86093122429A5680058DA6F /* 队列 */,
 				C860931B2429A5680058DA6F /* 滑动窗口问题 */,
 				C860931D2429A5680058DA6F /* 链表 */,
+				C860934C242DADCD0058DA6F /* 排序_链表 */,
 				C86093162429A5680058DA6F /* 排序_数组 */,
+				C860933F242AEFAC0058DA6F /* 排序算法(10 大排序算法) */,
 				C86093252429A5680058DA6F /* 栈 */,
+				C8B6A72C2425EDFE00C03EED /* Algorithm.playground */,
+				C8C6A66A2372B92300B3059D /* main.swift */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -257,6 +274,7 @@
 				C86093302429A5680058DA6F /* _88_合并两个有序数组.swift in Sources */,
 				C860933D2429A5680058DA6F /* _224_基本计算器.swift in Sources */,
 				C86093332429A5680058DA6F /* _234_回文链表.swift in Sources */,
+				C860934E242DADF40058DA6F /* _21_合并两个有序链表.swift in Sources */,
 				C8609347242B4BC80058DA6F /* 插入排序.swift in Sources */,
 				C860933A2429A5680058DA6F /* _20_有效的括号.swift in Sources */,
 				C86093312429A5680058DA6F /* _164_最大间距.swift in Sources */,
@@ -271,6 +289,8 @@
 				C860932D2429A5680058DA6F /* Queue.swift in Sources */,
 				C8609343242B082C0058DA6F /* 选择排序.swift in Sources */,
 				C860932E2429A5680058DA6F /* _75_颜色分类.swift in Sources */,
+				C8609352242DAE4A0058DA6F /* _23_合并K个排序链表.swift in Sources */,
+				C860934B242D93900058DA6F /* 快速排序.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
