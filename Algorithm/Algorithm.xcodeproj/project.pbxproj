@@ -32,9 +32,10 @@
 		C8609345242B1AD20058DA6F /* 堆排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8609344242B1AD20058DA6F /* 堆排序.swift */; };
 		C8609347242B4BC80058DA6F /* 插入排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8609346242B4BC80058DA6F /* 插入排序.swift */; };
 		C8609349242B57BF0058DA6F /* 归并排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8609348242B57BF0058DA6F /* 归并排序.swift */; };
-		C860934B242D93900058DA6F /* 快速排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = C860934A242D93900058DA6F /* 快速排序.swift */; };
-		C860934E242DADF40058DA6F /* _21_合并两个有序链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C860934D242DADF30058DA6F /* _21_合并两个有序链表.swift */; };
-		C8609352242DAE4A0058DA6F /* _23_合并K个排序链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8609351242DAE4A0058DA6F /* _23_合并K个排序链表.swift */; };
+		C8656ECD243D976200713D1A /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8656ECC243D976200713D1A /* BinarySearchTree.swift */; };
+		C8656ECF243DAE6800713D1A /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8656ECE243DAE6800713D1A /* TreeNode.swift */; };
+		C8656ED1243DAF0D00713D1A /* _226_翻转二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8656ED0243DAF0D00713D1A /* _226_翻转二叉树.swift */; };
+		C8656ED9243DCADE00713D1A /* 获取最大公约数.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8656ED8243DCADE00713D1A /* 获取最大公约数.swift */; };
 		C8C6A66B2372B92300B3059D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C6A66A2372B92300B3059D /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,9 +77,10 @@
 		C8609344242B1AD20058DA6F /* 堆排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "堆排序.swift"; sourceTree = "<group>"; };
 		C8609346242B4BC80058DA6F /* 插入排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "插入排序.swift"; sourceTree = "<group>"; };
 		C8609348242B57BF0058DA6F /* 归并排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "归并排序.swift"; sourceTree = "<group>"; };
-		C860934A242D93900058DA6F /* 快速排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "快速排序.swift"; sourceTree = "<group>"; };
-		C860934D242DADF30058DA6F /* _21_合并两个有序链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_21_合并两个有序链表.swift"; sourceTree = "<group>"; };
-		C8609351242DAE4A0058DA6F /* _23_合并K个排序链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_23_合并K个排序链表.swift"; sourceTree = "<group>"; };
+		C8656ECC243D976200713D1A /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		C8656ECE243DAE6800713D1A /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		C8656ED0243DAF0D00713D1A /* _226_翻转二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_226_翻转二叉树.swift"; sourceTree = "<group>"; };
+		C8656ED8243DCADE00713D1A /* 获取最大公约数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "获取最大公约数.swift"; sourceTree = "<group>"; };
 		C8B6A72C2425EDFE00C03EED /* Algorithm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Algorithm.playground; sourceTree = "<group>"; };
 		C8C6A6672372B92300B3059D /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C6A66A2372B92300B3059D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -158,18 +160,18 @@
 				C8609344242B1AD20058DA6F /* 堆排序.swift */,
 				C8609346242B4BC80058DA6F /* 插入排序.swift */,
 				C8609348242B57BF0058DA6F /* 归并排序.swift */,
-				C860934A242D93900058DA6F /* 快速排序.swift */,
 			);
 			path = "排序算法(10 大排序算法)";
 			sourceTree = "<group>";
 		};
-		C860934C242DADCD0058DA6F /* 排序_链表 */ = {
+		C8656ECB243D972600713D1A /* 树 */ = {
 			isa = PBXGroup;
 			children = (
-				C860934D242DADF30058DA6F /* _21_合并两个有序链表.swift */,
-				C8609351242DAE4A0058DA6F /* _23_合并K个排序链表.swift */,
+				C8656ECC243D976200713D1A /* BinarySearchTree.swift */,
+				C8656ECE243DAE6800713D1A /* TreeNode.swift */,
+				C8656ED0243DAF0D00713D1A /* _226_翻转二叉树.swift */,
 			);
-			path = "排序_链表";
+			path = "树";
 			sourceTree = "<group>";
 		};
 		C8C6A65E2372B92300B3059D = {
@@ -191,15 +193,16 @@
 		C8C6A6692372B92300B3059D /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				C8B6A72C2425EDFE00C03EED /* Algorithm.playground */,
+				C8C6A66A2372B92300B3059D /* main.swift */,
+				C8656ED8243DCADE00713D1A /* 获取最大公约数.swift */,
 				C86093122429A5680058DA6F /* 队列 */,
 				C860931B2429A5680058DA6F /* 滑动窗口问题 */,
 				C860931D2429A5680058DA6F /* 链表 */,
-				C860934C242DADCD0058DA6F /* 排序_链表 */,
 				C86093162429A5680058DA6F /* 排序_数组 */,
 				C860933F242AEFAC0058DA6F /* 排序算法(10 大排序算法) */,
+				C8656ECB243D972600713D1A /* 树 */,
 				C86093252429A5680058DA6F /* 栈 */,
-				C8B6A72C2425EDFE00C03EED /* Algorithm.playground */,
-				C8C6A66A2372B92300B3059D /* main.swift */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -269,15 +272,18 @@
 				C8609345242B1AD20058DA6F /* 堆排序.swift in Sources */,
 				C8C6A66B2372B92300B3059D /* main.swift in Sources */,
 				C860933C2429A5680058DA6F /* _150_逆波兰表达式求值.swift in Sources */,
+				C8656ECF243DAE6800713D1A /* TreeNode.swift in Sources */,
 				C86093392429A5680058DA6F /* _83_删除排序链表中的重复元素.swift in Sources */,
 				C86093322429A5680058DA6F /* _3_无重复字符的最长子串.swift in Sources */,
+				C8656ED9243DCADE00713D1A /* 获取最大公约数.swift in Sources */,
 				C86093302429A5680058DA6F /* _88_合并两个有序数组.swift in Sources */,
 				C860933D2429A5680058DA6F /* _224_基本计算器.swift in Sources */,
 				C86093332429A5680058DA6F /* _234_回文链表.swift in Sources */,
-				C860934E242DADF40058DA6F /* _21_合并两个有序链表.swift in Sources */,
 				C8609347242B4BC80058DA6F /* 插入排序.swift in Sources */,
 				C860933A2429A5680058DA6F /* _20_有效的括号.swift in Sources */,
+				C8656ECD243D976200713D1A /* BinarySearchTree.swift in Sources */,
 				C86093312429A5680058DA6F /* _164_最大间距.swift in Sources */,
+				C8656ED1243DAF0D00713D1A /* _226_翻转二叉树.swift in Sources */,
 				C86093342429A5680058DA6F /* _203_移除链表元素.swift in Sources */,
 				C860933B2429A5680058DA6F /* Stack.swift in Sources */,
 				C860933E2429A5680058DA6F /* _856_括号的分数.swift in Sources */,
@@ -289,8 +295,6 @@
 				C860932D2429A5680058DA6F /* Queue.swift in Sources */,
 				C8609343242B082C0058DA6F /* 选择排序.swift in Sources */,
 				C860932E2429A5680058DA6F /* _75_颜色分类.swift in Sources */,
-				C8609352242DAE4A0058DA6F /* _23_合并K个排序链表.swift in Sources */,
-				C860934B242D93900058DA6F /* 快速排序.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
