@@ -35,5 +35,6 @@ import Foundation
  */
 
 class _164_最大间距 {
+    let arr = [1,2,3]
     
 }

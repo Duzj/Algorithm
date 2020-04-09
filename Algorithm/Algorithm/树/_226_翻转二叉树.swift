@@ -40,6 +40,7 @@ import Foundation
 class _226_翻转二叉树 {
 //   可以使用前,中,后,层序遍历
     
+    //前序遍历
     func invertTree(_ root: TreeNode?) -> TreeNode? {
         if root == nil {
             return root
@@ -51,6 +52,71 @@ class _226_翻转二叉树 {
         
         root?.left =  invertTree(root?.left)
         root?.right =  invertTree(root?.right)
+        return root
+    }
+    
+    
+    //中序遍历
+    func invertTree1(_ root: TreeNode?) -> TreeNode? {
+        if root == nil {
+            return root
+        }
+        
+        root?.left =  invertTree(root?.left)
+        
+        let temp = root?.left
+        root?.left = root?.right
+        root?.right = temp
+        //以为已经交换了 left 和 right ,所以下面还是递归 left
+        root?.left =  invertTree(root?.left)
+        
+        return root
+    }
+    
+    
+    //后序遍历
+    func invertTree2(_ root: TreeNode?) -> TreeNode? {
+        if root == nil {
+            return root
+        }
+        
+        root?.left =  invertTree(root?.left)
+        root?.right =  invertTree(root?.right)
+    
+        let temp = root?.left
+        root?.left = root?.right
+        root?.right = temp
+        
+        return root
+    }
+    
+    
+    //层序遍历
+    func invertTree3(_ root: TreeNode?) -> TreeNode? {
+        
+        var queue = Queue<TreeNode>()
+        
+        if root == nil {
+            return root
+        }
+        
+        queue.enQueue(element: root!)
+        
+        while !queue.isEmpty() {
+            let node = queue.deQueue()!
+            print(node.val)
+            
+            let temp = node.left
+            node.left = node.right
+            node.right = temp
+
+            if node.left != nil {
+                queue.enQueue(element: node.left!)
+            }
+            if node.right != nil {
+                queue.enQueue(element: node.right!)
+            }
+        }
         return root
     }
 }
