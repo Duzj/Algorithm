@@ -64,3 +64,38 @@ class _98_验证二叉搜索树 {
         inorder(root?.right)
     }
 }
+
+
+class _98_验证二叉搜索树1 {
+    //中序遍历 看是否是升序
+    func isValidBST(_ root: TreeNode?) -> Bool {
+//        if root == nil {
+//            return true
+//        }
+        
+        var min =  Int.min
+        var stack = Stack<TreeNode>()
+        var currentNode = root
+        while !stack.isEmpty() || currentNode != nil{
+            
+            while currentNode != nil {
+                stack.push(currentNode!)
+                currentNode = currentNode?.left
+            }
+            
+            currentNode = stack.pop()!
+            
+            let val = currentNode!.val
+            if val <= min {
+                return false
+            }
+            min = val
+            
+            currentNode = currentNode?.right
+        }
+        return true
+
+    }
+    
+
+}
