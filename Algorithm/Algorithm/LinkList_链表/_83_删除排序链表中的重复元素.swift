@@ -25,7 +25,28 @@ import Foundation
  */
 
 class _83_删除排序链表中的重复元素 {
+    
     func deleteDuplicates(_ head: ListNode?) -> ListNode? {
+        if head == nil{
+            return head
+        }
+        var current = head
+        var pre = head
+        while current != nil {
+            if current!.val == current!.next?.val ?? 0 {
+                current = current?.next
+
+            }else{
+                pre?.next = current?.next
+                pre = pre?.next
+                current = current?.next
+            }
+        }
+        pre?.next = nil
+        return head
+    }
+        
+    func deleteDuplicates2(_ head: ListNode?) -> ListNode? {
         
         var nodeSet = Set<Int>()
         let  sentinelHead = ListNode(0)

@@ -57,6 +57,13 @@
 		C8ADF7B2243F296300E355E5 /* _164_最大间距.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF78E243F296300E355E5 /* _164_最大间距.swift */; };
 		C8ADF7B3243F296300E355E5 /* _面试题_10_01_合并排序的数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF78F243F296300E355E5 /* _面试题_10_01_合并排序的数组.swift */; };
 		C8ADF7CD243F2F0000E355E5 /* _69_x的平方根.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF7CC243F2F0000E355E5 /* _69_x的平方根.swift */; };
+		C8EFE2C7244BF32700412191 /* _2_两数相加.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFE2C6244BF32700412191 /* _2_两数相加.swift */; };
+		C8EFE2C9244BF60D00412191 /* _160_相交链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFE2C8244BF60D00412191 /* _160_相交链表.swift */; };
+		C8EFE2CB244BF68400412191 /* _面试题_02_07_链表相交.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFE2CA244BF68400412191 /* _面试题_02_07_链表相交.swift */; };
+		C8EFE2CD244BF6EF00412191 /* _面试_52_两个链表的第一个公共节点.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFE2CC244BF6EF00412191 /* _面试_52_两个链表的第一个公共节点.swift */; };
+		C8EFE2CF244BFAAA00412191 /* _86_分隔链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFE2CE244BFAAA00412191 /* _86_分隔链表.swift */; };
+		C8EFE2D1244BFBE300412191 /* _面试题_02_04_分割链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFE2D0244BFBE300412191 /* _面试题_02_04_分割链表.swift */; };
+		C8EFE2D3244C3F5600412191 /* _237_删除链表中的节点.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFE2D2244C3F5600412191 /* _237_删除链表中的节点.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,6 +132,13 @@
 		C8ADF78F243F296300E355E5 /* _面试题_10_01_合并排序的数组.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_面试题_10_01_合并排序的数组.swift"; sourceTree = "<group>"; };
 		C8ADF7CC243F2F0000E355E5 /* _69_x的平方根.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_69_x的平方根.swift"; sourceTree = "<group>"; };
 		C8C6A6672372B92300B3059D /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EFE2C6244BF32700412191 /* _2_两数相加.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_2_两数相加.swift"; sourceTree = "<group>"; };
+		C8EFE2C8244BF60D00412191 /* _160_相交链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_160_相交链表.swift"; sourceTree = "<group>"; };
+		C8EFE2CA244BF68400412191 /* _面试题_02_07_链表相交.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_02_07_链表相交.swift"; sourceTree = "<group>"; };
+		C8EFE2CC244BF6EF00412191 /* _面试_52_两个链表的第一个公共节点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试_52_两个链表的第一个公共节点.swift"; sourceTree = "<group>"; };
+		C8EFE2CE244BFAAA00412191 /* _86_分隔链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_86_分隔链表.swift"; sourceTree = "<group>"; };
+		C8EFE2D0244BFBE300412191 /* _面试题_02_04_分割链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_02_04_分割链表.swift"; sourceTree = "<group>"; };
+		C8EFE2D2244C3F5600412191 /* _237_删除链表中的节点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_237_删除链表中的节点.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +229,13 @@
 				C8ADF783243F296300E355E5 /* _876_链表的中间结点.swift */,
 				C8ADF784243F296300E355E5 /* _141_环形链表.swift */,
 				C8ADF785243F296300E355E5 /* _83_删除排序链表中的重复元素.swift */,
+				C8EFE2C6244BF32700412191 /* _2_两数相加.swift */,
+				C8EFE2C8244BF60D00412191 /* _160_相交链表.swift */,
+				C8EFE2CA244BF68400412191 /* _面试题_02_07_链表相交.swift */,
+				C8EFE2CC244BF6EF00412191 /* _面试_52_两个链表的第一个公共节点.swift */,
+				C8EFE2CE244BFAAA00412191 /* _86_分隔链表.swift */,
+				C8EFE2D0244BFBE300412191 /* _面试题_02_04_分割链表.swift */,
+				C8EFE2D2244C3F5600412191 /* _237_删除链表中的节点.swift */,
 			);
 			path = "LinkList_链表";
 			sourceTree = "<group>";
@@ -336,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8EFE2D3244C3F5600412191 /* _237_删除链表中的节点.swift in Sources */,
 				C8ADF796243F296300E355E5 /* _225_用队列实现栈.swift in Sources */,
 				C82776F8244195FA00565E28 /* _230_二叉搜索树中第K小的元素.swift in Sources */,
 				C82776FC244195FA00565E28 /* _938_二叉搜索树的范围和.swift in Sources */,
@@ -343,12 +365,14 @@
 				C8ADF7A1243F296300E355E5 /* 冒泡排序.swift in Sources */,
 				C82776F9244195FA00565E28 /* _450_删除二叉搜索树中的节点.swift in Sources */,
 				C8ADF7AF243F296300E355E5 /* _75_颜色分类.swift in Sources */,
+				C8EFE2CB244BF68400412191 /* _面试题_02_07_链表相交.swift in Sources */,
 				C8ADF791243F296300E355E5 /* _20_有效的括号.swift in Sources */,
 				C8ADF795243F296300E355E5 /* _856_括号的分数.swift in Sources */,
 				C8ADF7A3243F296300E355E5 /* 选择排序.swift in Sources */,
 				C8ADF7A9243F296300E355E5 /* _876_链表的中间结点.swift in Sources */,
 				C8ADF79E243F296300E355E5 /* 归并排序.swift in Sources */,
 				C8277706244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift in Sources */,
+				C8EFE2C7244BF32700412191 /* _2_两数相加.swift in Sources */,
 				C8277700244195FA00565E28 /* _226_翻转二叉树.swift in Sources */,
 				C8ADF7AB243F296300E355E5 /* _83_删除排序链表中的重复元素.swift in Sources */,
 				C82776FF244195FA00565E28 /* _98_验证二叉搜索树.swift in Sources */,
@@ -357,17 +381,21 @@
 				C8ADF7AC243F296300E355E5 /* 获取最大公约数.swift in Sources */,
 				C8ADF7B2243F296300E355E5 /* _164_最大间距.swift in Sources */,
 				C8ADF7AA243F296300E355E5 /* _141_环形链表.swift in Sources */,
+				C8EFE2D1244BFBE300412191 /* _面试题_02_04_分割链表.swift in Sources */,
 				C8ADF7A2243F296300E355E5 /* 快速排序.swift in Sources */,
 				C8ADF7A7243F296300E355E5 /* _206_反转链表.swift in Sources */,
 				C8277707244195FA00565E28 /* BinaryTree.swift in Sources */,
 				C82776FD244195FA00565E28 /* _173_二叉搜索树迭代器.swift in Sources */,
+				C8EFE2CF244BFAAA00412191 /* _86_分隔链表.swift in Sources */,
 				C8ADF793243F296300E355E5 /* _150_逆波兰表达式求值.swift in Sources */,
 				C8ADF7A5243F296300E355E5 /* _234_回文链表.swift in Sources */,
+				C8EFE2CD244BF6EF00412191 /* _面试_52_两个链表的第一个公共节点.swift in Sources */,
 				C8277702244195FA00565E28 /* _783_二叉搜索树结点最小距离.swift in Sources */,
 				C8ADF7A6243F296300E355E5 /* _203_移除链表元素.swift in Sources */,
 				C8ADF7B1243F296300E355E5 /* _88_合并两个有序数组.swift in Sources */,
 				C8277705244195FA00565E28 /* _235_二叉搜索树的最近公共祖先.swift in Sources */,
 				C8ADF794243F296300E355E5 /* _224_基本计算器.swift in Sources */,
+				C8EFE2C9244BF60D00412191 /* _160_相交链表.swift in Sources */,
 				C8ADF7A4243F296300E355E5 /* 希尔排序.swift in Sources */,
 				C8ADF7B3243F296300E355E5 /* _面试题_10_01_合并排序的数组.swift in Sources */,
 				C8ADF7CD243F2F0000E355E5 /* _69_x的平方根.swift in Sources */,

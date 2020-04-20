@@ -41,19 +41,21 @@ import Foundation
 class _141_环形链表 {
     
     //快慢指针
-    func hasCycle(_ head : ListNode) -> Bool {
-        if head == nil || head.next == nil {
+    func hasCycle(_ head : ListNode?) -> Bool {
+        if head == nil || head?.next == nil {
             return false
         }
         //慢指针
         var slow = head;
         //快指针
-        var fast = head.next;
-        
+//        var fast = head?.next;
+        var fast = head;
+
         while fast != nil && fast?.next != nil{
-            slow = slow.next!;
+            slow = slow?.next;
             fast = fast?.next?.next;
             if  slow == fast! {
+//            if  slow === fast! {
                 return true
             }
         }

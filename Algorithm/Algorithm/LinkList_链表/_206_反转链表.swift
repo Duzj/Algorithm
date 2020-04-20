@@ -28,8 +28,25 @@ import Foundation
 class _206_反转链表 {
     func reverseList(_ head: ListNode?) -> ListNode? {
         
+        //非递归
+        var newHead : ListNode? = nil
+        var current = head
+        while current != nil {
+            let temp = current?.next
+            current?.next = newHead
+            newHead = current
+            current = temp
+        }
+        return newHead
         
-        
-        return nil
+        //递归
+//         if head == nil || head?.next == nil{
+//            return head
+//        }
+//        let  newHead = reverseList(head?.next)
+            //上面一句之后,除了头结点,其他的都已经有序了,下面是把头结点放到最后面
+//        head?.next?.next = head
+//        head?.next = nil
+//        return newHead
     }
 }

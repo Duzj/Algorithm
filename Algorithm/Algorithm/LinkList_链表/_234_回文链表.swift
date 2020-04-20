@@ -31,37 +31,83 @@ class _234_回文链表 {
     //快慢指针法  或者数组列表发;数组列表法是先遍历链表,把链表的值放到数组中,然后从数组的开头和结尾向中间遍历,看值是否相等,因为要额外只用一个数组,因此控件复杂度 O(n)
     //下面是快慢指针法
     func isPalindrome(_ head: ListNode?) -> Bool {
+        //为空,或者只有一个值 , 就是回文链表
+        if head == nil || head?.next == nil{
+            return true
+        }
+
+        //如果只有 2 个值 ,就判断这 2 个值是否相等,返回
+        if head!.next!.next == nil{
+            return (head!.next!.val == head!.val)
+        }
+
+
+        //如果链表的节点大于 3
+        //先找中间节点
         var fast = head
         var slow = head
-        
-        //快慢指针先找到中间结点
-        while fast != nil && fast?.next != nil {
-            fast = fast?.next?.next
+
+        while (fast != nil && fast?.next != nil){
             slow = slow?.next
+            fast = fast?.next?.next
         }
-        
-        //翻转链表的后半部分
-        var newHead : ListNode? = nil
-        var current = slow
-        while current != nil {
-            let  temp = current?.next
-            current?.next = newHead
-            newHead = current
-            current = temp
+
+        //slow 是中间节点
+        var rHead = slow
+        //翻转后半部分
+        var newRHead : ListNode? = nil
+        while (rHead != nil){
+            let temp = rHead?.next
+            rHead!.next = newRHead
+            newRHead = rHead
+            rHead = temp
         }
-        
-        //比较值
+
         var originHead = head
-        while newHead != nil {
-            if newHead?.val != originHead?.val {
+        while (newRHead != nil) {
+            if newRHead!.val != originHead!.val{
                 return false
             }
-            newHead = newHead?.next
+            newRHead = newRHead?.next
             originHead = originHead?.next
         }
-        
+
         return true
     }
+    
+    
+//    func isPalindrome(_ head: ListNode?) -> Bool {
+//        var fast = head
+//        var slow = head
+//        
+//        //快慢指针先找到中间结点
+//        while fast != nil && fast?.next != nil {
+//            fast = fast?.next?.next
+//            slow = slow?.next
+//        }
+//        
+//        //翻转链表的后半部分
+//        var newHead : ListNode? = nil
+//        var current = slow
+//        while current != nil {
+//            let  temp = current?.next
+//            current?.next = newHead
+//            newHead = current
+//            current = temp
+//        }
+//        
+//        //比较值
+//        var originHead = head
+//        while newHead != nil {
+//            if newHead?.val != originHead?.val {
+//                return false
+//            }
+//            newHead = newHead?.next
+//            originHead = originHead?.next
+//        }
+//        
+//        return true
+//    }
 }
 
 /*
@@ -78,5 +124,7 @@ class _234_回文链表 {
  //node4.next = node5;
  //node5.next = node3;
 
- _234_回文链表().isPalindrome(node)
+ //_234_回文链表().isPalindrome(node)
+ print(_234_回文链表().isPalindrome(node));
+
  */

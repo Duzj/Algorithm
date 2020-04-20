@@ -54,10 +54,10 @@ class _203_移除链表元素 {
             return head;
         }
 
-        head?.next =  removeElements(head?.next, val)
+        head?.next =  removeElements1(head?.next, val)
         
         if  head?.val == val {
-            return head?.next ?? nil
+            return head?.next
         }else{
             return head;
         }
