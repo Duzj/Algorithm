@@ -24,7 +24,7 @@
 		C8277706244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82776F6244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift */; };
 		C8277707244195FA00565E28 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82776F7244195FA00565E28 /* BinaryTree.swift */; };
 		C8ABC4E92446A0FC00CE1B03 /* _面试题_10_11_峰与谷.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABC4E82446A0FC00CE1B03 /* _面试题_10_11_峰与谷.swift */; };
-		C8ADF790243F296300E355E5 /* _3_无重复字符的最长子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF763243F296200E355E5 /* _3_无重复字符的最长子串.swift */; };
+		C8ADF790243F296300E355E5 /* __3_无重复字符的最长子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF763243F296200E355E5 /* __3_无重复字符的最长子串.swift */; };
 		C8ADF791243F296300E355E5 /* _20_有效的括号.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF765243F296200E355E5 /* _20_有效的括号.swift */; };
 		C8ADF792243F296300E355E5 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF766243F296200E355E5 /* Stack.swift */; };
 		C8ADF793243F296300E355E5 /* _150_逆波兰表达式求值.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF767243F296200E355E5 /* _150_逆波兰表达式求值.swift */; };
@@ -57,6 +57,53 @@
 		C8ADF7B2243F296300E355E5 /* _164_最大间距.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF78E243F296300E355E5 /* _164_最大间距.swift */; };
 		C8ADF7B3243F296300E355E5 /* _面试题_10_01_合并排序的数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF78F243F296300E355E5 /* _面试题_10_01_合并排序的数组.swift */; };
 		C8ADF7CD243F2F0000E355E5 /* _69_x的平方根.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF7CC243F2F0000E355E5 /* _69_x的平方根.swift */; };
+		C8C223B224514E7000585A13 /* _42_接雨水.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223B124514E7000585A13 /* _42_接雨水.swift */; };
+		C8C223B5245176BD00585A13 /* _面试题_01_09_字符串轮转.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223B4245176BD00585A13 /* _面试题_01_09_字符串轮转.swift */; };
+		C8C223B72451782D00585A13 /* _572_另一个树的子树.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223B62451782D00585A13 /* _572_另一个树的子树.swift */; };
+		C8C223B924517FAE00585A13 /* _242_有效的字母异位词.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223B824517FAE00585A13 /* _242_有效的字母异位词.swift */; };
+		C8C223BB2451829900585A13 /* _5_最长回文子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223BA2451829900585A13 /* _5_最长回文子串.swift */; };
+		C8C223BD245182E000585A13 /* _72_编辑距离.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223BC245182E000585A13 /* _72_编辑距离.swift */; };
+		C8C223BF245185B200585A13 /* _151_翻转字符串里的单词.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223BE245185B200585A13 /* _151_翻转字符串里的单词.swift */; };
+		C8C223C1245185EC00585A13 /* _面试题_58_I_翻转单词顺序.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223C0245185EC00585A13 /* _面试题_58_I_翻转单词顺序.swift */; };
+		C8C223C324518D2500585A13 /* _3_无重复字符的最长子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223C224518D2500585A13 /* _3_无重复字符的最长子串.swift */; };
+		C8C223C524519B0500585A13 /* _1143_最长公共子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223C424519B0500585A13 /* _1143_最长公共子序列.swift */; };
+		C8C223C724519B4700585A13 /* _32_最长有效括号.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223C624519B4700585A13 /* _32_最长有效括号.swift */; };
+		C8C223C924519B9C00585A13 /* _1048_最长字符串链.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223C824519B9C00585A13 /* _1048_最长字符串链.swift */; };
+		C8C223CC24519EBA00585A13 /* _面试题_47_礼物的最大价值.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223CB24519EBA00585A13 /* _面试题_47_礼物的最大价值.swift */; };
+		C8C223CE24519FE900585A13 /* _64_最小路径和.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223CD24519FE900585A13 /* _64_最小路径和.swift */; };
+		C8C223D02451A03500585A13 /* _62_不同路径.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223CF2451A03500585A13 /* _62_不同路径.swift */; };
+		C8C223D22451AFFC00585A13 /* _58_最后一个单词的长度.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223D12451AFFC00585A13 /* _58_最后一个单词的长度.swift */; };
+		C8C223D42451B05000585A13 /* _面试题_58_II_左旋转字符串.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223D32451B05000585A13 /* _面试题_58_II_左旋转字符串.swift */; };
+		C8C223D62451B09000585A13 /* _121_买卖股票的最佳时机.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223D52451B09000585A13 /* _121_买卖股票的最佳时机.swift */; };
+		C8C223D82451B12100585A13 /* _面试题_63_股票的最大利润.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223D72451B12100585A13 /* _面试题_63_股票的最大利润.swift */; };
+		C8C223DA2451D15E00585A13 /* _122_买卖股票的最佳时机_II.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223D92451D15E00585A13 /* _122_买卖股票的最佳时机_II.swift */; };
+		C8C223DC2451D1AC00585A13 /* _123_买卖股票的最佳时机_III.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223DB2451D1AC00585A13 /* _123_买卖股票的最佳时机_III.swift */; };
+		C8C223DE2451D1F700585A13 /* _188_买卖股票的最佳时机_IV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223DD2451D1F700585A13 /* _188_买卖股票的最佳时机_IV.swift */; };
+		C8C223E02451D25400585A13 /* _714_买卖股票的最佳时机含手续费.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223DF2451D25400585A13 /* _714_买卖股票的最佳时机含手续费.swift */; };
+		C8C223E22451D33700585A13 /* _977_有序数组的平方.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223E12451D33700585A13 /* _977_有序数组的平方.swift */; };
+		C8C223E42451D42200585A13 /* _138_复制带随机指针的链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223E32451D42200585A13 /* _138_复制带随机指针的链表.swift */; };
+		C8C223E62451D53200585A13 /* _25_K个一组翻转链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223E52451D53200585A13 /* _25_K个一组翻转链表.swift */; };
+		C8C223E82451D6D100585A13 /* _53_最大子序和.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223E72451D6D100585A13 /* _53_最大子序和.swift */; };
+		C8C223EA2451D71100585A13 /* _面试题_42_连续子数组的最大和.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223E92451D71100585A13 /* _面试题_42_连续子数组的最大和.swift */; };
+		C8C223EC2451D76300585A13 /* _322_零钱兑换.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223EB2451D76300585A13 /* _322_零钱兑换.swift */; };
+		C8C223EE2451D79E00585A13 /* _面试题_08_11_硬币.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223ED2451D79E00585A13 /* _面试题_08_11_硬币.swift */; };
+		C8C223F02451D7DF00585A13 /* _300_最长上升子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223EF2451D7DF00585A13 /* _300_最长上升子序列.swift */; };
+		C8C223F22451D81B00585A13 /* _70_爬楼梯.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223F12451D81B00585A13 /* _70_爬楼梯.swift */; };
+		C8C223F62451D87E00585A13 /* _213_打家劫舍_II.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223F52451D87E00585A13 /* _213_打家劫舍_II.swift */; };
+		C8C223F82451D8CC00585A13 /* _674_最长连续递增序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223F72451D8CC00585A13 /* _674_最长连续递增序列.swift */; };
+		C8C223FA2451D91000585A13 /* _63_不同路径_II.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223F92451D91000585A13 /* _63_不同路径_II.swift */; };
+		C8C223FC2451D95E00585A13 /* _673_最长递增子序列的个数.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C223FB2451D95E00585A13 /* _673_最长递增子序列的个数.swift */; };
+		C8C224022451D9F100585A13 /* _516_最长回文子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C224012451D9F100585A13 /* _516_最长回文子序列.swift */; };
+		C8CDFA862455CD650038C4AF /* _198_打家劫舍.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CDFA852455CD650038C4AF /* _198_打家劫舍.swift */; };
+		C8CDFA8C2455CE0F0038C4AF /* _1235_规划兼职工作.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CDFA8B2455CE0F0038C4AF /* _1235_规划兼职工作.swift */; };
+		C8CDFA8E2455CE410038C4AF /* _943_最短超级串.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CDFA8D2455CE410038C4AF /* _943_最短超级串.swift */; };
+		C8CDFA922455CE690038C4AF /* _376_摆动序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CDFA912455CE690038C4AF /* _376_摆动序列.swift */; };
+		C8E80D3C244DDBFC00D25F27 /* _155_最小栈.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E80D3B244DDBFC00D25F27 /* _155_最小栈.swift */; };
+		C8E80D3E244DDFF500D25F27 /* _239_滑动窗口最大值.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E80D3D244DDFF500D25F27 /* _239_滑动窗口最大值.swift */; };
+		C8E80D40244DE07400D25F27 /* _面试题_59_I_滑动窗口的最大值.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E80D3F244DE07400D25F27 /* _面试题_59_I_滑动窗口的最大值.swift */; };
+		C8E80D42244DE0D900D25F27 /* _面试题_59_II_队列的最大值.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E80D41244DE0D900D25F27 /* _面试题_59_II_队列的最大值.swift */; };
+		C8E80D44244DF3F200D25F27 /* _654_最大二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E80D43244DF3F200D25F27 /* _654_最大二叉树.swift */; };
+		C8E80D46244E855300D25F27 /* _739_每日温度.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E80D45244E855300D25F27 /* _739_每日温度.swift */; };
 		C8EFE2C7244BF32700412191 /* _2_两数相加.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFE2C6244BF32700412191 /* _2_两数相加.swift */; };
 		C8EFE2C9244BF60D00412191 /* _160_相交链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFE2C8244BF60D00412191 /* _160_相交链表.swift */; };
 		C8EFE2CB244BF68400412191 /* _面试题_02_07_链表相交.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EFE2CA244BF68400412191 /* _面试题_02_07_链表相交.swift */; };
@@ -96,7 +143,7 @@
 		C82776F6244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_701_二叉搜索树中的插入操作.swift"; sourceTree = "<group>"; };
 		C82776F7244195FA00565E28 /* BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		C8ABC4E82446A0FC00CE1B03 /* _面试题_10_11_峰与谷.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_10_11_峰与谷.swift"; sourceTree = "<group>"; };
-		C8ADF763243F296200E355E5 /* _3_无重复字符的最长子串.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_3_无重复字符的最长子串.swift"; sourceTree = "<group>"; };
+		C8ADF763243F296200E355E5 /* __3_无重复字符的最长子串.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "__3_无重复字符的最长子串.swift"; sourceTree = "<group>"; };
 		C8ADF765243F296200E355E5 /* _20_有效的括号.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_20_有效的括号.swift"; sourceTree = "<group>"; };
 		C8ADF766243F296200E355E5 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		C8ADF767243F296200E355E5 /* _150_逆波兰表达式求值.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_150_逆波兰表达式求值.swift"; sourceTree = "<group>"; };
@@ -131,7 +178,54 @@
 		C8ADF78E243F296300E355E5 /* _164_最大间距.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_164_最大间距.swift"; sourceTree = "<group>"; };
 		C8ADF78F243F296300E355E5 /* _面试题_10_01_合并排序的数组.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_面试题_10_01_合并排序的数组.swift"; sourceTree = "<group>"; };
 		C8ADF7CC243F2F0000E355E5 /* _69_x的平方根.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_69_x的平方根.swift"; sourceTree = "<group>"; };
+		C8C223B124514E7000585A13 /* _42_接雨水.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_42_接雨水.swift"; sourceTree = "<group>"; };
+		C8C223B4245176BD00585A13 /* _面试题_01_09_字符串轮转.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_01_09_字符串轮转.swift"; sourceTree = "<group>"; };
+		C8C223B62451782D00585A13 /* _572_另一个树的子树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_572_另一个树的子树.swift"; sourceTree = "<group>"; };
+		C8C223B824517FAE00585A13 /* _242_有效的字母异位词.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_242_有效的字母异位词.swift"; sourceTree = "<group>"; };
+		C8C223BA2451829900585A13 /* _5_最长回文子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_5_最长回文子串.swift"; sourceTree = "<group>"; };
+		C8C223BC245182E000585A13 /* _72_编辑距离.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_72_编辑距离.swift"; sourceTree = "<group>"; };
+		C8C223BE245185B200585A13 /* _151_翻转字符串里的单词.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_151_翻转字符串里的单词.swift"; sourceTree = "<group>"; };
+		C8C223C0245185EC00585A13 /* _面试题_58_I_翻转单词顺序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_58_I_翻转单词顺序.swift"; sourceTree = "<group>"; };
+		C8C223C224518D2500585A13 /* _3_无重复字符的最长子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_3_无重复字符的最长子串.swift"; sourceTree = "<group>"; };
+		C8C223C424519B0500585A13 /* _1143_最长公共子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_1143_最长公共子序列.swift"; sourceTree = "<group>"; };
+		C8C223C624519B4700585A13 /* _32_最长有效括号.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_32_最长有效括号.swift"; sourceTree = "<group>"; };
+		C8C223C824519B9C00585A13 /* _1048_最长字符串链.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_1048_最长字符串链.swift"; sourceTree = "<group>"; };
+		C8C223CB24519EBA00585A13 /* _面试题_47_礼物的最大价值.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_47_礼物的最大价值.swift"; sourceTree = "<group>"; };
+		C8C223CD24519FE900585A13 /* _64_最小路径和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_64_最小路径和.swift"; sourceTree = "<group>"; };
+		C8C223CF2451A03500585A13 /* _62_不同路径.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_62_不同路径.swift"; sourceTree = "<group>"; };
+		C8C223D12451AFFC00585A13 /* _58_最后一个单词的长度.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_58_最后一个单词的长度.swift"; sourceTree = "<group>"; };
+		C8C223D32451B05000585A13 /* _面试题_58_II_左旋转字符串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_58_II_左旋转字符串.swift"; sourceTree = "<group>"; };
+		C8C223D52451B09000585A13 /* _121_买卖股票的最佳时机.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_121_买卖股票的最佳时机.swift"; sourceTree = "<group>"; };
+		C8C223D72451B12100585A13 /* _面试题_63_股票的最大利润.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_63_股票的最大利润.swift"; sourceTree = "<group>"; };
+		C8C223D92451D15E00585A13 /* _122_买卖股票的最佳时机_II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_122_买卖股票的最佳时机_II.swift"; sourceTree = "<group>"; };
+		C8C223DB2451D1AC00585A13 /* _123_买卖股票的最佳时机_III.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_123_买卖股票的最佳时机_III.swift"; sourceTree = "<group>"; };
+		C8C223DD2451D1F700585A13 /* _188_买卖股票的最佳时机_IV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_188_买卖股票的最佳时机_IV.swift"; sourceTree = "<group>"; };
+		C8C223DF2451D25400585A13 /* _714_买卖股票的最佳时机含手续费.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_714_买卖股票的最佳时机含手续费.swift"; sourceTree = "<group>"; };
+		C8C223E12451D33700585A13 /* _977_有序数组的平方.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_977_有序数组的平方.swift"; sourceTree = "<group>"; };
+		C8C223E32451D42200585A13 /* _138_复制带随机指针的链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_138_复制带随机指针的链表.swift"; sourceTree = "<group>"; };
+		C8C223E52451D53200585A13 /* _25_K个一组翻转链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_25_K个一组翻转链表.swift"; sourceTree = "<group>"; };
+		C8C223E72451D6D100585A13 /* _53_最大子序和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_53_最大子序和.swift"; sourceTree = "<group>"; };
+		C8C223E92451D71100585A13 /* _面试题_42_连续子数组的最大和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_42_连续子数组的最大和.swift"; sourceTree = "<group>"; };
+		C8C223EB2451D76300585A13 /* _322_零钱兑换.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_322_零钱兑换.swift"; sourceTree = "<group>"; };
+		C8C223ED2451D79E00585A13 /* _面试题_08_11_硬币.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_08_11_硬币.swift"; sourceTree = "<group>"; };
+		C8C223EF2451D7DF00585A13 /* _300_最长上升子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_300_最长上升子序列.swift"; sourceTree = "<group>"; };
+		C8C223F12451D81B00585A13 /* _70_爬楼梯.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_70_爬楼梯.swift"; sourceTree = "<group>"; };
+		C8C223F52451D87E00585A13 /* _213_打家劫舍_II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_213_打家劫舍_II.swift"; sourceTree = "<group>"; };
+		C8C223F72451D8CC00585A13 /* _674_最长连续递增序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_674_最长连续递增序列.swift"; sourceTree = "<group>"; };
+		C8C223F92451D91000585A13 /* _63_不同路径_II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_63_不同路径_II.swift"; sourceTree = "<group>"; };
+		C8C223FB2451D95E00585A13 /* _673_最长递增子序列的个数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_673_最长递增子序列的个数.swift"; sourceTree = "<group>"; };
+		C8C224012451D9F100585A13 /* _516_最长回文子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_516_最长回文子序列.swift"; sourceTree = "<group>"; };
 		C8C6A6672372B92300B3059D /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CDFA852455CD650038C4AF /* _198_打家劫舍.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_198_打家劫舍.swift"; sourceTree = "<group>"; };
+		C8CDFA8B2455CE0F0038C4AF /* _1235_规划兼职工作.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_1235_规划兼职工作.swift"; sourceTree = "<group>"; };
+		C8CDFA8D2455CE410038C4AF /* _943_最短超级串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_943_最短超级串.swift"; sourceTree = "<group>"; };
+		C8CDFA912455CE690038C4AF /* _376_摆动序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_376_摆动序列.swift"; sourceTree = "<group>"; };
+		C8E80D3B244DDBFC00D25F27 /* _155_最小栈.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_155_最小栈.swift"; sourceTree = "<group>"; };
+		C8E80D3D244DDFF500D25F27 /* _239_滑动窗口最大值.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_239_滑动窗口最大值.swift"; sourceTree = "<group>"; };
+		C8E80D3F244DE07400D25F27 /* _面试题_59_I_滑动窗口的最大值.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_59_I_滑动窗口的最大值.swift"; sourceTree = "<group>"; };
+		C8E80D41244DE0D900D25F27 /* _面试题_59_II_队列的最大值.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_59_II_队列的最大值.swift"; sourceTree = "<group>"; };
+		C8E80D43244DF3F200D25F27 /* _654_最大二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_654_最大二叉树.swift"; sourceTree = "<group>"; };
+		C8E80D45244E855300D25F27 /* _739_每日温度.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_739_每日温度.swift"; sourceTree = "<group>"; };
 		C8EFE2C6244BF32700412191 /* _2_两数相加.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_2_两数相加.swift"; sourceTree = "<group>"; };
 		C8EFE2C8244BF60D00412191 /* _160_相交链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_160_相交链表.swift"; sourceTree = "<group>"; };
 		C8EFE2CA244BF68400412191 /* _面试题_02_07_链表相交.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_02_07_链表相交.swift"; sourceTree = "<group>"; };
@@ -168,6 +262,7 @@
 				C82776F6244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift */,
 				C82776F2244195FA00565E28 /* _783_二叉搜索树结点最小距离.swift */,
 				C82776EC244195FA00565E28 /* _938_二叉搜索树的范围和.swift */,
+				C8E80D43244DF3F200D25F27 /* _654_最大二叉树.swift */,
 				C82776EA244195FA00565E28 /* BinarySearchTree.swift */,
 				C82776F7244195FA00565E28 /* BinaryTree.swift */,
 				C82776F3244195FA00565E28 /* TreeNode.swift */,
@@ -178,7 +273,7 @@
 		C8ADF762243F296200E355E5 /* 滑动窗口问题 */ = {
 			isa = PBXGroup;
 			children = (
-				C8ADF763243F296200E355E5 /* _3_无重复字符的最长子串.swift */,
+				C8ADF763243F296200E355E5 /* __3_无重复字符的最长子串.swift */,
 			);
 			path = "滑动窗口问题";
 			sourceTree = "<group>";
@@ -191,6 +286,7 @@
 				C8ADF767243F296200E355E5 /* _150_逆波兰表达式求值.swift */,
 				C8ADF768243F296200E355E5 /* _224_基本计算器.swift */,
 				C8ADF769243F296200E355E5 /* _856_括号的分数.swift */,
+				C8E80D3B244DDBFC00D25F27 /* _155_最小栈.swift */,
 			);
 			path = "Stack_栈";
 			sourceTree = "<group>";
@@ -200,6 +296,11 @@
 			children = (
 				C8ADF76B243F296200E355E5 /* _225_用队列实现栈.swift */,
 				C8ADF76C243F296200E355E5 /* _232_用栈实现队列.swift */,
+				C8E80D3D244DDFF500D25F27 /* _239_滑动窗口最大值.swift */,
+				C8E80D3F244DE07400D25F27 /* _面试题_59_I_滑动窗口的最大值.swift */,
+				C8E80D41244DE0D900D25F27 /* _面试题_59_II_队列的最大值.swift */,
+				C8E80D45244E855300D25F27 /* _739_每日温度.swift */,
+				C8C223B124514E7000585A13 /* _42_接雨水.swift */,
 				C8ADF76D243F296200E355E5 /* Queue.swift */,
 			);
 			path = "Queue_队列";
@@ -236,6 +337,8 @@
 				C8EFE2CE244BFAAA00412191 /* _86_分隔链表.swift */,
 				C8EFE2D0244BFBE300412191 /* _面试题_02_04_分割链表.swift */,
 				C8EFE2D2244C3F5600412191 /* _237_删除链表中的节点.swift */,
+				C8C223E32451D42200585A13 /* _138_复制带随机指针的链表.swift */,
+				C8C223E52451D53200585A13 /* _25_K个一组翻转链表.swift */,
 			);
 			path = "LinkList_链表";
 			sourceTree = "<group>";
@@ -258,8 +361,60 @@
 				C8ADF78E243F296300E355E5 /* _164_最大间距.swift */,
 				C8ADF78F243F296300E355E5 /* _面试题_10_01_合并排序的数组.swift */,
 				C8ABC4E82446A0FC00CE1B03 /* _面试题_10_11_峰与谷.swift */,
+				C8C223E12451D33700585A13 /* _977_有序数组的平方.swift */,
 			);
 			path = "Sort_排序_数组";
+			sourceTree = "<group>";
+		};
+		C8C223B32451766A00585A13 /* 字符串 */ = {
+			isa = PBXGroup;
+			children = (
+				C8C223B4245176BD00585A13 /* _面试题_01_09_字符串轮转.swift */,
+				C8C223B62451782D00585A13 /* _572_另一个树的子树.swift */,
+				C8C223B824517FAE00585A13 /* _242_有效的字母异位词.swift */,
+				C8C223BE245185B200585A13 /* _151_翻转字符串里的单词.swift */,
+				C8C223C0245185EC00585A13 /* _面试题_58_I_翻转单词顺序.swift */,
+				C8C223C224518D2500585A13 /* _3_无重复字符的最长子串.swift */,
+				C8C223C424519B0500585A13 /* _1143_最长公共子序列.swift */,
+				C8C223C624519B4700585A13 /* _32_最长有效括号.swift */,
+				C8C223C824519B9C00585A13 /* _1048_最长字符串链.swift */,
+				C8C223D12451AFFC00585A13 /* _58_最后一个单词的长度.swift */,
+				C8C223D32451B05000585A13 /* _面试题_58_II_左旋转字符串.swift */,
+			);
+			path = "字符串";
+			sourceTree = "<group>";
+		};
+		C8C223CA24519E9100585A13 /* 动态规划 */ = {
+			isa = PBXGroup;
+			children = (
+				C8C223CB24519EBA00585A13 /* _面试题_47_礼物的最大价值.swift */,
+				C8C223CD24519FE900585A13 /* _64_最小路径和.swift */,
+				C8C223CF2451A03500585A13 /* _62_不同路径.swift */,
+				C8C223F92451D91000585A13 /* _63_不同路径_II.swift */,
+				C8C223D52451B09000585A13 /* _121_买卖股票的最佳时机.swift */,
+				C8C223D92451D15E00585A13 /* _122_买卖股票的最佳时机_II.swift */,
+				C8C223DB2451D1AC00585A13 /* _123_买卖股票的最佳时机_III.swift */,
+				C8C223DD2451D1F700585A13 /* _188_买卖股票的最佳时机_IV.swift */,
+				C8C223DF2451D25400585A13 /* _714_买卖股票的最佳时机含手续费.swift */,
+				C8C223D72451B12100585A13 /* _面试题_63_股票的最大利润.swift */,
+				C8C223BC245182E000585A13 /* _72_编辑距离.swift */,
+				C8C223BA2451829900585A13 /* _5_最长回文子串.swift */,
+				C8C223E72451D6D100585A13 /* _53_最大子序和.swift */,
+				C8C223E92451D71100585A13 /* _面试题_42_连续子数组的最大和.swift */,
+				C8C223EB2451D76300585A13 /* _322_零钱兑换.swift */,
+				C8C223ED2451D79E00585A13 /* _面试题_08_11_硬币.swift */,
+				C8C223EF2451D7DF00585A13 /* _300_最长上升子序列.swift */,
+				C8C223F12451D81B00585A13 /* _70_爬楼梯.swift */,
+				C8CDFA852455CD650038C4AF /* _198_打家劫舍.swift */,
+				C8C223F52451D87E00585A13 /* _213_打家劫舍_II.swift */,
+				C8C223F72451D8CC00585A13 /* _674_最长连续递增序列.swift */,
+				C8C223FB2451D95E00585A13 /* _673_最长递增子序列的个数.swift */,
+				C8CDFA8B2455CE0F0038C4AF /* _1235_规划兼职工作.swift */,
+				C8CDFA8D2455CE410038C4AF /* _943_最短超级串.swift */,
+				C8C224012451D9F100585A13 /* _516_最长回文子序列.swift */,
+				C8CDFA912455CE690038C4AF /* _376_摆动序列.swift */,
+			);
+			path = "动态规划";
 			sourceTree = "<group>";
 		};
 		C8C6A65E2372B92300B3059D = {
@@ -288,6 +443,8 @@
 				C8ADF775243F296200E355E5 /* Algorithm.playground */,
 				C8ADF77E243F296300E355E5 /* LinkList_链表 */,
 				C8ADF773243F296200E355E5 /* main.swift */,
+				C8C223CA24519E9100585A13 /* 动态规划 */,
+				C8C223B32451766A00585A13 /* 字符串 */,
 				C8ADF76A243F296200E355E5 /* Queue_队列 */,
 				C8ADF787243F296300E355E5 /* Sort_排序_链表 */,
 				C8ADF78A243F296300E355E5 /* Sort_排序_数组 */,
@@ -357,35 +514,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8CDFA922455CE690038C4AF /* _376_摆动序列.swift in Sources */,
 				C8EFE2D3244C3F5600412191 /* _237_删除链表中的节点.swift in Sources */,
 				C8ADF796243F296300E355E5 /* _225_用队列实现栈.swift in Sources */,
 				C82776F8244195FA00565E28 /* _230_二叉搜索树中第K小的元素.swift in Sources */,
+				C8CDFA8C2455CE0F0038C4AF /* _1235_规划兼职工作.swift in Sources */,
+				C8C223E02451D25400585A13 /* _714_买卖股票的最佳时机含手续费.swift in Sources */,
 				C82776FC244195FA00565E28 /* _938_二叉搜索树的范围和.swift in Sources */,
 				C82776FB244195FA00565E28 /* _700_二叉搜索树中的搜索.swift in Sources */,
 				C8ADF7A1243F296300E355E5 /* 冒泡排序.swift in Sources */,
+				C8C223F62451D87E00585A13 /* _213_打家劫舍_II.swift in Sources */,
 				C82776F9244195FA00565E28 /* _450_删除二叉搜索树中的节点.swift in Sources */,
+				C8C223DC2451D1AC00585A13 /* _123_买卖股票的最佳时机_III.swift in Sources */,
 				C8ADF7AF243F296300E355E5 /* _75_颜色分类.swift in Sources */,
 				C8EFE2CB244BF68400412191 /* _面试题_02_07_链表相交.swift in Sources */,
+				C8E80D44244DF3F200D25F27 /* _654_最大二叉树.swift in Sources */,
+				C8CDFA862455CD650038C4AF /* _198_打家劫舍.swift in Sources */,
 				C8ADF791243F296300E355E5 /* _20_有效的括号.swift in Sources */,
+				C8C223C324518D2500585A13 /* _3_无重复字符的最长子串.swift in Sources */,
 				C8ADF795243F296300E355E5 /* _856_括号的分数.swift in Sources */,
+				C8C224022451D9F100585A13 /* _516_最长回文子序列.swift in Sources */,
+				C8C223F22451D81B00585A13 /* _70_爬楼梯.swift in Sources */,
+				C8C223FA2451D91000585A13 /* _63_不同路径_II.swift in Sources */,
+				C8C223DE2451D1F700585A13 /* _188_买卖股票的最佳时机_IV.swift in Sources */,
+				C8E80D40244DE07400D25F27 /* _面试题_59_I_滑动窗口的最大值.swift in Sources */,
+				C8C223B224514E7000585A13 /* _42_接雨水.swift in Sources */,
+				C8C223F02451D7DF00585A13 /* _300_最长上升子序列.swift in Sources */,
 				C8ADF7A3243F296300E355E5 /* 选择排序.swift in Sources */,
 				C8ADF7A9243F296300E355E5 /* _876_链表的中间结点.swift in Sources */,
 				C8ADF79E243F296300E355E5 /* 归并排序.swift in Sources */,
+				C8C223D82451B12100585A13 /* _面试题_63_股票的最大利润.swift in Sources */,
 				C8277706244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift in Sources */,
 				C8EFE2C7244BF32700412191 /* _2_两数相加.swift in Sources */,
+				C8C223DA2451D15E00585A13 /* _122_买卖股票的最佳时机_II.swift in Sources */,
+				C8C223C924519B9C00585A13 /* _1048_最长字符串链.swift in Sources */,
+				C8C223D02451A03500585A13 /* _62_不同路径.swift in Sources */,
 				C8277700244195FA00565E28 /* _226_翻转二叉树.swift in Sources */,
 				C8ADF7AB243F296300E355E5 /* _83_删除排序链表中的重复元素.swift in Sources */,
+				C8C223BD245182E000585A13 /* _72_编辑距离.swift in Sources */,
+				C8C223E22451D33700585A13 /* _977_有序数组的平方.swift in Sources */,
 				C82776FF244195FA00565E28 /* _98_验证二叉搜索树.swift in Sources */,
 				C8ABC4E92446A0FC00CE1B03 /* _面试题_10_11_峰与谷.swift in Sources */,
+				C8C223C524519B0500585A13 /* _1143_最长公共子序列.swift in Sources */,
 				C8ADF7A8243F296300E355E5 /* ListNode.swift in Sources */,
 				C8ADF7AC243F296300E355E5 /* 获取最大公约数.swift in Sources */,
 				C8ADF7B2243F296300E355E5 /* _164_最大间距.swift in Sources */,
 				C8ADF7AA243F296300E355E5 /* _141_环形链表.swift in Sources */,
+				C8C223B924517FAE00585A13 /* _242_有效的字母异位词.swift in Sources */,
 				C8EFE2D1244BFBE300412191 /* _面试题_02_04_分割链表.swift in Sources */,
 				C8ADF7A2243F296300E355E5 /* 快速排序.swift in Sources */,
 				C8ADF7A7243F296300E355E5 /* _206_反转链表.swift in Sources */,
+				C8E80D3C244DDBFC00D25F27 /* _155_最小栈.swift in Sources */,
 				C8277707244195FA00565E28 /* BinaryTree.swift in Sources */,
 				C82776FD244195FA00565E28 /* _173_二叉搜索树迭代器.swift in Sources */,
+				C8C223FC2451D95E00585A13 /* _673_最长递增子序列的个数.swift in Sources */,
 				C8EFE2CF244BFAAA00412191 /* _86_分隔链表.swift in Sources */,
 				C8ADF793243F296300E355E5 /* _150_逆波兰表达式求值.swift in Sources */,
 				C8ADF7A5243F296300E355E5 /* _234_回文链表.swift in Sources */,
@@ -395,25 +577,47 @@
 				C8ADF7B1243F296300E355E5 /* _88_合并两个有序数组.swift in Sources */,
 				C8277705244195FA00565E28 /* _235_二叉搜索树的最近公共祖先.swift in Sources */,
 				C8ADF794243F296300E355E5 /* _224_基本计算器.swift in Sources */,
+				C8E80D42244DE0D900D25F27 /* _面试题_59_II_队列的最大值.swift in Sources */,
+				C8C223CE24519FE900585A13 /* _64_最小路径和.swift in Sources */,
+				C8CDFA8E2455CE410038C4AF /* _943_最短超级串.swift in Sources */,
 				C8EFE2C9244BF60D00412191 /* _160_相交链表.swift in Sources */,
 				C8ADF7A4243F296300E355E5 /* 希尔排序.swift in Sources */,
+				C8E80D46244E855300D25F27 /* _739_每日温度.swift in Sources */,
 				C8ADF7B3243F296300E355E5 /* _面试题_10_01_合并排序的数组.swift in Sources */,
+				C8C223E82451D6D100585A13 /* _53_最大子序和.swift in Sources */,
+				C8C223C724519B4700585A13 /* _32_最长有效括号.swift in Sources */,
+				C8C223E42451D42200585A13 /* _138_复制带随机指针的链表.swift in Sources */,
+				C8E80D3E244DDFF500D25F27 /* _239_滑动窗口最大值.swift in Sources */,
+				C8C223D42451B05000585A13 /* _面试题_58_II_左旋转字符串.swift in Sources */,
 				C8ADF7CD243F2F0000E355E5 /* _69_x的平方根.swift in Sources */,
 				C8ADF797243F296300E355E5 /* _232_用栈实现队列.swift in Sources */,
 				C8ADF79D243F296300E355E5 /* main.swift in Sources */,
+				C8C223B72451782D00585A13 /* _572_另一个树的子树.swift in Sources */,
+				C8C223EC2451D76300585A13 /* _322_零钱兑换.swift in Sources */,
+				C8C223EA2451D71100585A13 /* _面试题_42_连续子数组的最大和.swift in Sources */,
+				C8C223D22451AFFC00585A13 /* _58_最后一个单词的长度.swift in Sources */,
+				C8C223F82451D8CC00585A13 /* _674_最长连续递增序列.swift in Sources */,
 				C8ADF7AE243F296300E355E5 /* _23_合并K个排序链表.swift in Sources */,
 				C8ADF7AD243F296300E355E5 /* _21_合并两个有序链表.swift in Sources */,
+				C8C223BB2451829900585A13 /* _5_最长回文子串.swift in Sources */,
+				C8C223C1245185EC00585A13 /* _面试题_58_I_翻转单词顺序.swift in Sources */,
 				C82776FE244195FA00565E28 /* _108_将有序数组转换为二叉搜索树.swift in Sources */,
 				C8ADF792243F296300E355E5 /* Stack.swift in Sources */,
+				C8C223EE2451D79E00585A13 /* _面试题_08_11_硬币.swift in Sources */,
 				C8277701244195FA00565E28 /* _99_恢复二叉搜索树.swift in Sources */,
 				C8277704244195FA00565E28 /* _530_二叉搜索树的最小绝对差.swift in Sources */,
 				C8277703244195FA00565E28 /* TreeNode.swift in Sources */,
+				C8C223BF245185B200585A13 /* _151_翻转字符串里的单词.swift in Sources */,
 				C8ADF79F243F296300E355E5 /* 堆排序.swift in Sources */,
 				C8ADF798243F296300E355E5 /* Queue.swift in Sources */,
+				C8C223CC24519EBA00585A13 /* _面试题_47_礼物的最大价值.swift in Sources */,
+				C8C223D62451B09000585A13 /* _121_买卖股票的最佳时机.swift in Sources */,
 				C82776FA244195FA00565E28 /* BinarySearchTree.swift in Sources */,
 				C8ADF7B0243F296300E355E5 /* _面试题_16_16_部分排序.swift in Sources */,
 				C8ADF7A0243F296300E355E5 /* 插入排序.swift in Sources */,
-				C8ADF790243F296300E355E5 /* _3_无重复字符的最长子串.swift in Sources */,
+				C8C223B5245176BD00585A13 /* _面试题_01_09_字符串轮转.swift in Sources */,
+				C8ADF790243F296300E355E5 /* __3_无重复字符的最长子串.swift in Sources */,
+				C8C223E62451D53200585A13 /* _25_K个一组翻转链表.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

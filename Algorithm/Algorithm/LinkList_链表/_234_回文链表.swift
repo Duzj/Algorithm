@@ -47,7 +47,9 @@ class _234_回文链表 {
         var fast = head
         var slow = head
 
-        while (fast != nil && fast?.next != nil){
+//        while (fast != nil && fast?.next != nil){
+        while (fast?.next != nil && fast?.next?.next != nil){
+
             slow = slow?.next
             fast = fast?.next?.next
         }

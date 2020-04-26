@@ -51,7 +51,8 @@ class _141_环形链表 {
 //        var fast = head?.next;
         var fast = head;
 
-        while fast != nil && fast?.next != nil{
+//        while fast != nil && fast?.next != nil{
+        while fast?.next != nil && fast?.next?.next != nil{
             slow = slow?.next;
             fast = fast?.next?.next;
             if  slow == fast! {

@@ -46,7 +46,7 @@ import Foundation
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 */
 
-class _3_无重复字符的最长子串 {
+class __3_无重复字符的最长子串 {
     //第一种暴力解法, 遍历出所有的子串, 然后判断每个子串中是否有重复字符串 ,可以用 set 判断包含
     //解法 1,暴力解法
     func lengthOfLongestSubstring1(_ s: String) -> Int {
