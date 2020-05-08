@@ -35,7 +35,60 @@ import Foundation
  著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 class _面试题_47_礼物的最大价值 {
+//    func maxValue(_ grid: [[Int]]) -> Int {
+//        let temp =  [Int](repeating: 0, count: grid[0].count)
+//        //初始化 dp 数组 ,最大价值数组
+//        var dp = [[Int]](repeating: temp, count: grid.count)
+//
+//        dp[0][0] = grid[0][0]
+//
+//        let m = grid.count
+//        let n = grid[0].count
+//
+//        var maxV = dp[0][0];
+//
+//        for i in 0 ..< m {
+//            for j in 0 ..< n  {
+//                if i == 0 && j == 0 {
+//                    continue;
+//                }
+//                if i == 0 {
+//                   dp[i][j] = dp[i][j - 1] + grid[i][j]
+//               }else if j == 0 {
+//                    dp[i][j] = dp[i - 1][j] + grid[i][j];
+//                }else{
+//                    dp[i][j] = max(dp[i-1][j], dp[i][j-1]) + grid[i][j];
+//                }
+//                maxV = dp[i][j];
+//            }
+//        }
+//        return maxV
+//    }
+    
+    //优化
     func maxValue(_ grid: [[Int]]) -> Int {
-        return 0
+        let temp =  [Int](repeating: 0, count: grid[0].count)
+        //初始化 dp 数组 ,最大价值数组
+        var dp = [[Int]](repeating: temp, count: grid.count)
+    
+        dp[0][0] = grid[0][0]
+        
+        let m = grid.count
+        let n = grid[0].count
+        
+        for i in 1 ..< m {
+            dp[i][0] = grid[i][0] + dp[i-1][0]
+        }
+        
+        for j in 1 ..< n {
+            dp[0][j] = grid[0][j] + dp[0][j-1]
+        }
+        
+        for i in 1 ..< m {
+            for j in 1 ..< n  {
+                dp[i][j] = max(dp[i-1][j], dp[i][j-1]) + grid[i][j];
+            }
+        }
+        return dp[m-1][n-1]
     }
 }
