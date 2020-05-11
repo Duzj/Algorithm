@@ -9,6 +9,7 @@
 import Foundation
 
 
+_64_最小路径和().minPathSum([[1,3,1],[1,5,1],[4,2,1]])
 _面试题_47_礼物的最大价值().maxValue([[1,3,1],[1,5,1],[4,2,1]]);
 
 var node = ListNode(1);

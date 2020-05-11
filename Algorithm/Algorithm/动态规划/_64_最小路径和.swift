@@ -30,7 +30,56 @@ import Foundation
  */
 
 class _64_最小路径和 {
+//    func minPathSum(_ grid: [[Int]]) -> Int {
+//        let m = grid.count;
+//        let n = grid[0].count;
+//        //初始化 dp 数组
+//        var dp = [[Int]](repeating: [Int](repeating: 0, count: n), count: m)
+//
+//        dp[0][0] = grid[0][0]
+//        for i in 1 ..< m {
+//            dp[i][0] = dp[i-1][0] +  grid[i][0]
+//        }
+//
+//        for j in 1 ..< n {
+//            dp[0][j] = dp[0][j-1] + grid[0][j]
+//        }
+//
+//        for i in 1 ..< m {
+//            for j in 1 ..< n {
+//                dp[i][j] = grid[i][j] + min(dp[i-1][j], dp[i][j-1])
+//            }
+//        }
+//        return dp[m-1][n-1]
+//    }
+    
+    //优化 使用一维数组
     func minPathSum(_ grid: [[Int]]) -> Int {
-        return 0
+        let m = grid.count;
+        let n = grid[0].count;
+        //初始化 dp 数组
+        var dp = [Int](repeating: 0, count: n)
+        
+        dp[0] = grid[0][0]
+        for i in 0 ..< m {
+            for j in 0 ..< n {
+                if i == 0 && j == 0 {
+                    continue
+                }
+                if i == 0  {
+                    dp[j] = dp[j-1] + grid[i][j]
+                }else if j == 0 {
+                    dp[j] = dp[j] + grid[i][j]
+                }else{
+                    dp[j] = min(dp[j - 1], dp[j]) + grid[i][j]
+                }
+            }
+        }
+        return dp[n-1]
     }
 }
+
+/*
+ [[0,1],
+ [1,0]]
+ */
