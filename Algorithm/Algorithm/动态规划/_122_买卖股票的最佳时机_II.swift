@@ -48,6 +48,42 @@ import Foundation
  */
 class _122_买卖股票的最佳时机_II {
     func maxProfit(_ prices: [Int]) -> Int {
-        return 0
+        if prices.count == 0{
+            return 0
+        }
+        let n = prices.count
+        var maxProfit = 0
+        var preMin = prices[0]
+        var prePrice = prices[0]
+        for i in 1 ..< n {
+        
+            if prices[i] >= prePrice {
+                if i == n - 1 { //防止数组后面是递增的 ,不加这一句会少算
+                    maxProfit = maxProfit + prices[i] - preMin
+                }
+            }else{
+                maxProfit = maxProfit + prePrice - preMin
+                preMin = prices[i]
+            }
+            prePrice = prices[i]
+        }
+    
+        return maxProfit
+    }
+    
+    
+    func maxProfit2(_ prices: [Int]) -> Int {
+        if prices.count == 0{
+            return 0
+        }
+        let n = prices.count
+        var maxProfit = 0
+
+        for i in 1 ..< n {
+            if prices[i] > prices[i-1] {
+                maxProfit = maxProfit + prices[i] - prices[i-1]
+            }
+        }
+        return maxProfit
     }
 }

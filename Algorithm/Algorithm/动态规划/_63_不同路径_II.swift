@@ -41,7 +41,44 @@ import Foundation
  著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 class _63_不同路径_II {
-//    func uniquePathsWithObstacles(_ obstacleGrid: [[Int]]) -> Int {
-//
-//    }
+    func uniquePathsWithObstacles(_ obstacleGrid: [[Int]]) -> Int {
+        
+        if obstacleGrid[0][0] == 1 {
+            return 0
+        }
+        let m = obstacleGrid.count
+        let n = obstacleGrid[0].count
+        
+        //初始化动态数组,表示走到当前节点的最多方法
+        var dp = [[Int]](repeating: [Int](repeating: 0, count: n), count: m)
+        
+        for i in 0 ..< m {
+            for j in 0 ..< n{
+                if i == 0 && j == 0 { //起始点为 1,只有一步就是起始点, 如果起始点有障碍,直接返回 0
+                    dp[i][j] = 1
+                }else if i == 0{ //第一行,如果当前有障碍,就置为 0 ,如果没有障碍就置为这一行前一步的值
+                    if obstacleGrid[i][j] == 1 {
+                        dp[i][j] = 0
+                    }else{
+                        dp[i][j] = dp[i][j - 1]
+                    }
+                    
+                }else if j == 0{ //第一列, 如果有障碍就置为 0 ,如果没有障碍就置为这一列前一步的值
+                    if obstacleGrid[i][j] == 1 {
+                        dp[i][j] = 0
+                    }else{
+                        dp[i][j] = dp[i - 1][j]
+                    }
+                }else{ //既不是起点 ,也不是第一行,也不是第一列,那么走到这一步的最多方法为, 左边的值 + 上面的值
+                    if obstacleGrid[i][j] == 1 {
+                        dp[i][j] = 0
+                    }else{
+                        dp[i][j] = dp[i - 1][j]  + dp[i][j - 1]
+                    }
+                    
+                }
+            }
+        }
+        return dp[m-1][n-1]
+    }
 }

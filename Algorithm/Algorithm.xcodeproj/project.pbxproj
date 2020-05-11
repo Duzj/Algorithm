@@ -23,6 +23,7 @@
 		C8277705244195FA00565E28 /* _235_二叉搜索树的最近公共祖先.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82776F5244195FA00565E28 /* _235_二叉搜索树的最近公共祖先.swift */; };
 		C8277706244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82776F6244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift */; };
 		C8277707244195FA00565E28 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82776F7244195FA00565E28 /* BinaryTree.swift */; };
+		C858D4F024691F8800629C2E /* _980_不同路径_III.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858D4EF24691F8800629C2E /* _980_不同路径_III.swift */; };
 		C8ABC4E92446A0FC00CE1B03 /* _面试题_10_11_峰与谷.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABC4E82446A0FC00CE1B03 /* _面试题_10_11_峰与谷.swift */; };
 		C8ADF790243F296300E355E5 /* __3_无重复字符的最长子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF763243F296200E355E5 /* __3_无重复字符的最长子串.swift */; };
 		C8ADF791243F296300E355E5 /* _20_有效的括号.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF765243F296200E355E5 /* _20_有效的括号.swift */; };
@@ -142,6 +143,7 @@
 		C82776F5244195FA00565E28 /* _235_二叉搜索树的最近公共祖先.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_235_二叉搜索树的最近公共祖先.swift"; sourceTree = "<group>"; };
 		C82776F6244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_701_二叉搜索树中的插入操作.swift"; sourceTree = "<group>"; };
 		C82776F7244195FA00565E28 /* BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		C858D4EF24691F8800629C2E /* _980_不同路径_III.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_980_不同路径_III.swift"; sourceTree = "<group>"; };
 		C8ABC4E82446A0FC00CE1B03 /* _面试题_10_11_峰与谷.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_10_11_峰与谷.swift"; sourceTree = "<group>"; };
 		C8ADF763243F296200E355E5 /* __3_无重复字符的最长子串.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "__3_无重复字符的最长子串.swift"; sourceTree = "<group>"; };
 		C8ADF765243F296200E355E5 /* _20_有效的括号.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_20_有效的括号.swift"; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 				C8C223CD24519FE900585A13 /* _64_最小路径和.swift */,
 				C8C223CF2451A03500585A13 /* _62_不同路径.swift */,
 				C8C223F92451D91000585A13 /* _63_不同路径_II.swift */,
+				C858D4EF24691F8800629C2E /* _980_不同路径_III.swift */,
 				C8C223D52451B09000585A13 /* _121_买卖股票的最佳时机.swift */,
 				C8C223D92451D15E00585A13 /* _122_买卖股票的最佳时机_II.swift */,
 				C8C223DB2451D1AC00585A13 /* _123_买卖股票的最佳时机_III.swift */,
@@ -596,6 +599,7 @@
 				C8C223EC2451D76300585A13 /* _322_零钱兑换.swift in Sources */,
 				C8C223EA2451D71100585A13 /* _面试题_42_连续子数组的最大和.swift in Sources */,
 				C8C223D22451AFFC00585A13 /* _58_最后一个单词的长度.swift in Sources */,
+				C858D4F024691F8800629C2E /* _980_不同路径_III.swift in Sources */,
 				C8C223F82451D8CC00585A13 /* _674_最长连续递增序列.swift in Sources */,
 				C8ADF7AE243F296300E355E5 /* _23_合并K个排序链表.swift in Sources */,
 				C8ADF7AD243F296300E355E5 /* _21_合并两个有序链表.swift in Sources */,
