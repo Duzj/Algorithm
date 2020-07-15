@@ -40,6 +40,51 @@ import Foundation
  */
 class _123_买卖股票的最佳时机_III {
     func maxProfit(_ prices: [Int]) -> Int {
-        return 0
+        
+       if prices.count == 0{
+            return 0
+        }
+        let n = prices.count
+        var maxProfit = 0
+        var preMin = prices[0]
+        var prePrice = prices[0]
+        
+        
+        var profitArr = [Int]()
+        
+//        for i in 1 ..< n {
+//        
+//            if prices[i] >= prePrice {
+//                if i == n - 1 { //防止数组后面是递增的 ,不加这一句会少算
+////                    maxProfit = maxProfit + prices[i] - preMin
+//                    profitArr.append(prices[i] - preMin)
+//                }
+//            }else{
+////                maxProfit = maxProfit + prePrice - preMin
+//                profitArr.append(prePrice - preMin)
+//                
+//                if <#condition#> {
+//                    <#code#>
+//                }
+//                
+//                preMin = prices[i]
+//            }
+//            prePrice = prices[i]
+//        }
+    
+        
+        profitArr.sort { (num0, num1) -> Bool in
+          return  num0 > num1 ?  true :  false
+        }
+        
+        var count = 2
+        if profitArr.count < 2 {
+            count = profitArr.count
+        }
+        
+        for i in 0 ..< count {
+            maxProfit = maxProfit + profitArr[i]
+        }
+        return maxProfit
     }
 }

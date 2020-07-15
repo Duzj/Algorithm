@@ -7,7 +7,8 @@
 //
 
 import Foundation
-
+var nums = [2,0,2,1,1,0]
+_75_颜色分类().sortColors(&nums)
 
 _122_买卖股票的最佳时机_II().maxProfit([1,2,3,4,5])
 

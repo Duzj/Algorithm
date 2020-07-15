@@ -38,6 +38,28 @@ import Foundation
 //3指针法，对 1，2，0的情况分别进行判断
 class _75_颜色分类 {
     func sortColors(_ nums: inout [Int]) {
+        var l = 0
+        var r = nums.count - 1
+        var i = 0
         
+        while i <= r {
+            let i_num = nums[i]
+            if i_num == 1 {
+                i += 1
+            } else if ( i_num == 0 ) {
+                swap(nums: &nums, i: i, j: l)
+                l += 1
+                i += 1
+            } else {
+                swap(nums: &nums, i: i, j: r)
+                r -= 1
+            }
+        }
+    }
+    
+    func swap(nums : inout  [Int] , i : Int , j : Int) {
+        let temp = nums[i]
+        nums[i] = nums[j]
+        nums[j] = temp
     }
 }
