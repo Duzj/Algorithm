@@ -23,6 +23,8 @@
 		C8277705244195FA00565E28 /* _235_二叉搜索树的最近公共祖先.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82776F5244195FA00565E28 /* _235_二叉搜索树的最近公共祖先.swift */; };
 		C8277706244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82776F6244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift */; };
 		C8277707244195FA00565E28 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82776F7244195FA00565E28 /* BinaryTree.swift */; };
+		C858A90824BE9FD7009E7D89 /* _96_不同的二叉搜索树.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A90724BE9FD7009E7D89 /* _96_不同的二叉搜索树.swift */; };
+		C858A90A24BEE025009E7D89 /* _397_整数替换.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A90924BEE025009E7D89 /* _397_整数替换.swift */; };
 		C858D4F024691F8800629C2E /* _980_不同路径_III.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858D4EF24691F8800629C2E /* _980_不同路径_III.swift */; };
 		C8ABC4E92446A0FC00CE1B03 /* _面试题_10_11_峰与谷.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABC4E82446A0FC00CE1B03 /* _面试题_10_11_峰与谷.swift */; };
 		C8ADF790243F296300E355E5 /* __3_无重复字符的最长子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADF763243F296200E355E5 /* __3_无重复字符的最长子串.swift */; };
@@ -143,6 +145,8 @@
 		C82776F5244195FA00565E28 /* _235_二叉搜索树的最近公共祖先.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_235_二叉搜索树的最近公共祖先.swift"; sourceTree = "<group>"; };
 		C82776F6244195FA00565E28 /* _701_二叉搜索树中的插入操作.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "_701_二叉搜索树中的插入操作.swift"; sourceTree = "<group>"; };
 		C82776F7244195FA00565E28 /* BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		C858A90724BE9FD7009E7D89 /* _96_不同的二叉搜索树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_96_不同的二叉搜索树.swift"; sourceTree = "<group>"; };
+		C858A90924BEE025009E7D89 /* _397_整数替换.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_397_整数替换.swift"; sourceTree = "<group>"; };
 		C858D4EF24691F8800629C2E /* _980_不同路径_III.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_980_不同路径_III.swift"; sourceTree = "<group>"; };
 		C8ABC4E82446A0FC00CE1B03 /* _面试题_10_11_峰与谷.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_面试题_10_11_峰与谷.swift"; sourceTree = "<group>"; };
 		C8ADF763243F296200E355E5 /* __3_无重复字符的最长子串.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "__3_无重复字符的最长子串.swift"; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				C82776EF244195FA00565E28 /* _98_验证二叉搜索树.swift */,
+				C858A90724BE9FD7009E7D89 /* _96_不同的二叉搜索树.swift */,
 				C82776F1244195FA00565E28 /* _99_恢复二叉搜索树.swift */,
 				C82776EE244195FA00565E28 /* _108_将有序数组转换为二叉搜索树.swift */,
 				C82776ED244195FA00565E28 /* _173_二叉搜索树迭代器.swift */,
@@ -440,6 +445,7 @@
 			isa = PBXGroup;
 			children = (
 				C8ADF7CC243F2F0000E355E5 /* _69_x的平方根.swift */,
+				C858A90924BEE025009E7D89 /* _397_整数替换.swift */,
 				C8ADF762243F296200E355E5 /* 滑动窗口问题 */,
 				C8ADF786243F296300E355E5 /* 获取最大公约数.swift */,
 				C8ADF774243F296200E355E5 /* Algorithm-Bridging-Header.h */,
@@ -532,6 +538,7 @@
 				C8ADF7AF243F296300E355E5 /* _75_颜色分类.swift in Sources */,
 				C8EFE2CB244BF68400412191 /* _面试题_02_07_链表相交.swift in Sources */,
 				C8E80D44244DF3F200D25F27 /* _654_最大二叉树.swift in Sources */,
+				C858A90824BE9FD7009E7D89 /* _96_不同的二叉搜索树.swift in Sources */,
 				C8CDFA862455CD650038C4AF /* _198_打家劫舍.swift in Sources */,
 				C8ADF791243F296300E355E5 /* _20_有效的括号.swift in Sources */,
 				C8C223C324518D2500585A13 /* _3_无重复字符的最长子串.swift in Sources */,
@@ -592,6 +599,7 @@
 				C8C223E42451D42200585A13 /* _138_复制带随机指针的链表.swift in Sources */,
 				C8E80D3E244DDFF500D25F27 /* _239_滑动窗口最大值.swift in Sources */,
 				C8C223D42451B05000585A13 /* _面试题_58_II_左旋转字符串.swift in Sources */,
+				C858A90A24BEE025009E7D89 /* _397_整数替换.swift in Sources */,
 				C8ADF7CD243F2F0000E355E5 /* _69_x的平方根.swift in Sources */,
 				C8ADF797243F296300E355E5 /* _232_用栈实现队列.swift in Sources */,
 				C8ADF79D243F296300E355E5 /* main.swift in Sources */,

@@ -7,6 +7,9 @@
 //
 
 import Foundation
+
+_96_不同的二叉搜索树().numTrees(3)
+
 var nums = [2,0,2,1,1,0]
 _75_颜色分类().sortColors(&nums)
 
