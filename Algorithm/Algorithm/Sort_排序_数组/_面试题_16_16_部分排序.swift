@@ -30,5 +30,45 @@ import Foundation
  */
 
 class _面试题_16_16_部分排序 {
-    
+    //寻找最左最右逆序对
+    func subSort(_ array: [Int]) -> [Int] {
+        let arrLength = array.count
+
+        if arrLength <= 1 {
+            return [-1 , -1];
+        }
+        
+        var j = 1
+        var max = array.first!
+        var r = -1
+        while j < arrLength {
+            let cur = array[j]
+            if cur >= max {
+                max = cur
+            }else{
+                r = j
+            }
+            j += 1
+        }
+//        [1,3,9,7,5]
+        
+        if r ==  -1 {
+            return [-1 , -1]
+        }
+        
+
+        var l = -1
+        var min = array.last!
+        var  i = arrLength - 2
+        while i >= 0 {
+            let cur = array[i]
+            if cur <= min {
+                min = cur
+            }else{
+                 l = i
+            }
+            i -= 1
+        }
+        return [l , r]
+    }
 }

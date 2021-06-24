@@ -34,7 +34,18 @@ import Foundation
  著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 class _977_有序数组的平方 {
-    func sortedSquares(_ A: [Int]) -> [Int] {
-        return [Int]()
+    func sortedSquares(_ nums: [Int]) -> [Int] {
+        var result = [Int]()
+        var i = 0 , j = nums.count - 1;
+        while i <= j {
+            if nums[i] * nums[i] > nums[j] * nums[j] {
+                result.insert(nums[i] * nums[i], at: 0)
+                i += 1
+            }else{
+                result.insert(nums[j] * nums[j], at: 0)
+                j -= 1
+            }
+        }
+        return result
     }
 }

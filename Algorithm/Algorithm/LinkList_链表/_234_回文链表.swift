@@ -28,54 +28,105 @@ import Foundation
 
 class _234_回文链表 {
     
-    //快慢指针法  或者数组列表发;数组列表法是先遍历链表,把链表的值放到数组中,然后从数组的开头和结尾向中间遍历,看值是否相等,因为要额外只用一个数组,因此控件复杂度 O(n)
-    //下面是快慢指针法
+    
+    
     func isPalindrome(_ head: ListNode?) -> Bool {
-        //为空,或者只有一个值 , 就是回文链表
-        if head == nil || head?.next == nil{
+        if head?.next == nil || head == nil{
             return true
         }
 
-        //如果只有 2 个值 ,就判断这 2 个值是否相等,返回
-        if head!.next!.next == nil{
-            return (head!.next!.val == head!.val)
-        }
-
-
-        //如果链表的节点大于 3
-        //先找中间节点
-        var fast = head
-        var slow = head
-
-//        while (fast != nil && fast?.next != nil){
-        while (fast?.next != nil && fast?.next?.next != nil){
-
-            slow = slow?.next
-            fast = fast?.next?.next
-        }
-
-        //slow 是中间节点
-        var rHead = slow
-        //翻转后半部分
-        var newRHead : ListNode? = nil
-        while (rHead != nil){
-            let temp = rHead?.next
-            rHead!.next = newRHead
-            newRHead = rHead
-            rHead = temp
-        }
-
-        var originHead = head
-        while (newRHead != nil) {
-            if newRHead!.val != originHead!.val{
-                return false
+        if head?.next?.next == nil{
+            if head!.val == head!.next!.val {
+                return true
             }
-            newRHead = newRHead?.next
-            originHead = originHead?.next
         }
 
+        var middle = findMiddle(head)
+
+        var reverse = reverseList(middle)
+        var current = head
+        while reverse != nil && current != nil {
+            if current!.val != reverse!.val{
+                return false
+            }else {
+                current = current?.next;
+                reverse = reverse?.next
+            }
+
+        }
         return true
     }
+
+
+    func findMiddle(_ head : ListNode?) -> ListNode? {
+        var show = head
+        var fast = head
+        while (fast?.next != nil && fast?.next?.next != nil){
+            show = show?.next
+            fast = fast?.next?.next
+        }
+        return show
+    }
+
+    func reverseList(_ head : ListNode?) -> ListNode? {
+        if head?.next == nil || head == nil{
+            return head
+        }
+
+        var newHead = reverseList(head?.next)
+        head?.next?.next = head;
+        head?.next = nil
+        return newHead
+    }
+    
+    
+    //快慢指针法  或者数组列表发;数组列表法是先遍历链表,把链表的值放到数组中,然后从数组的开头和结尾向中间遍历,看值是否相等,因为要额外只用一个数组,因此控件复杂度 O(n)
+    //下面是快慢指针法
+//    func isPalindrome(_ head: ListNode?) -> Bool {
+//        //为空,或者只有一个值 , 就是回文链表
+//        if head == nil || head?.next == nil{
+//            return true
+//        }
+//
+//        //如果只有 2 个值 ,就判断这 2 个值是否相等,返回
+//        if head!.next!.next == nil{
+//            return (head!.next!.val == head!.val)
+//        }
+//
+//
+//        //如果链表的节点大于 3
+//        //先找中间节点
+//        var fast = head
+//        var slow = head
+//
+//        while (fast?.next != nil && fast?.next?.next != nil){
+//
+//            slow = slow?.next
+//            fast = fast?.next?.next
+//        }
+//
+//        //slow 是中间节点
+//        var rHead = slow
+//        //翻转后半部分
+//        var newRHead : ListNode? = nil
+//        while (rHead != nil){
+//            let temp = rHead?.next
+//            rHead!.next = newRHead
+//            newRHead = rHead
+//            rHead = temp
+//        }
+//
+//        var originHead = head
+//        while (newRHead != nil) {
+//            if newRHead!.val != originHead!.val{
+//                return false
+//            }
+//            newRHead = newRHead?.next
+//            originHead = originHead?.next
+//        }
+//
+//        return true
+//    }
     
     
 //    func isPalindrome(_ head: ListNode?) -> Bool {
